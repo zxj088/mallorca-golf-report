@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>马略卡高尔夫月住计划</title>
+    <meta
+      name="description"
+      content="2026 年 12 月至 2027 年 1 月马略卡 Arabella Golf 月住计划，每周更新航班、住宿、高尔夫和租车建议。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Mallorca Golf Monitor</p>
+          <h1>马略卡高尔夫月住计划</h1>
+          <p class="hero-subtitle">
+            ARN 出发，PMI 到达；围绕 Arabella Golf 月卡、可做饭住宿、冬季航班和租车价格做每周更新。
+          </p>
+          <div class="hero-actions" aria-label="主要状态">
+            <span id="last-updated">更新中</span>
+            <span id="next-review">每周更新</span>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="推荐窗口">
+          <span class="panel-label">当前推荐</span>
+          <strong id="primary-window">读取数据中</strong>
+          <span id="golf-window">打球窗口读取中</span>
+        </div>
+      </section>
+
+      <section class="decision-grid" aria-label="核心决策">
+        <article class="decision-card decision-main">
+          <span>当前判断</span>
+          <h2 id="decision">读取数据中</h2>
+          <p id="confidence"></p>
+        </article>
+        <article class="route-card">
+          <span>路线</span>
+          <div class="route-visual" aria-hidden="true">
+            <div class="airport">ARN</div>
+            <div class="flight-line"></div>
+            <div class="airport">PMI</div>
+          </div>
+          <p id="route-copy"></p>
+        </article>
+      </section>
+
+      <section>
+        <div class="section-heading">
+          <p class="eyebrow">Watch List</p>
+          <h2>本周重点风险</h2>
+        </div>
+        <div id="alerts" class="alerts"></div>
+      </section>
+
+      <section class="content-grid">
+        <article class="info-panel">
+          <div class="panel-head">
+            <span class="icon">✈</span>
+            <h2>航班</h2>
+          </div>
+          <ul id="flights"></ul>
+        </article>
+        <article class="info-panel">
+          <div class="panel-head">
+            <span class="icon">⛳</span>
+            <h2>高尔夫</h2>
+          </div>
+          <ul id="golf"></ul>
+        </article>
+        <article class="info-panel">
+          <div class="panel-head">
+            <span class="icon">⌂</span>
+            <h2>住宿</h2>
+          </div>
+          <ul id="lodging"></ul>
+        </article>
+        <article class="info-panel">
+          <div class="panel-head">
+            <span class="icon">▣</span>
+            <h2>租车</h2>
+          </div>
+          <ul id="car"></ul>
+        </article>
+      </section>
+
+      <section class="split-section">
+        <article class="table-panel">
+          <div class="section-heading compact">
+            <p class="eyebrow">Budget Signals</p>
+            <h2>费用信号</h2>
+          </div>
+          <div id="costs" class="cost-list"></div>
+        </article>
+        <article class="channel-panel">
+          <div class="section-heading compact">
+            <p class="eyebrow">Lodging Search</p>
+            <h2>住宿查询渠道</h2>
+          </div>
+          <div id="channels" class="chips"></div>
+        </article>
+      </section>
+
+      <section class="timeline-section">
+        <div class="section-heading">
+          <p class="eyebrow">Next Calls</p>
+          <h2>待确认问题</h2>
+        </div>
+        <ol id="questions" class="questions"></ol>
+      </section>
+
+      <section class="timeline-section">
+        <div class="section-heading">
+          <p class="eyebrow">History</p>
+          <h2>更新记录</h2>
+        </div>
+        <div id="history" class="history"></div>
+      </section>
+
+      <section class="sources-section">
+        <div class="section-heading compact">
+          <p class="eyebrow">Sources</p>
+          <h2>主要来源</h2>
+        </div>
+        <div id="sources" class="sources"></div>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
