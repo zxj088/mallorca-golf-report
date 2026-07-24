@@ -62,17 +62,75 @@
       "不建议最小车型，长住行李和球包会明显受限。"
     ]
   },
+  "lodgingSearch": {
+    "checkIn": "2026-12-04",
+    "checkOut": "2027-01-06",
+    "adults": 2,
+    "rooms": 1,
+    "primaryArea": "Mallorca / Palmanova / Magaluf",
+    "note": "打开后请核对日期、人数、地点和是否为可做饭房型；部分中文网站可能会按语言或定位自动改写搜索条件。"
+  },
   "lodgingChannels": [
-    "携程/Trip.com",
-    "去哪儿",
-    "飞猪",
-    "酒店官网",
-    "Booking",
-    "Hotels.com",
-    "Agoda",
-    "Expedia",
-    "Airbnb",
-    "Vrbo"
+    {
+      "label": "携程 / Trip.com",
+      "url": "https://www.trip.com/hotels/list?checkin=2026-12-04&checkout=2027-01-06&adults=2&rooms=1&searchword=Mallorca%20Spain",
+      "note": "马略卡，12/04-01/06，2 成人"
+    },
+    {
+      "label": "携程国际酒店",
+      "url": "https://hotels.ctrip.com/international/list?checkin=2026-12-04&checkout=2027-01-06&adults=2&rooms=1&keyword=Mallorca",
+      "note": "中文界面，马略卡关键词"
+    },
+    {
+      "label": "去哪儿",
+      "url": "https://hotel.qunar.com/?fromDate=2026-12-04&toDate=2027-01-06&q=%E9%A9%AC%E7%95%A5%E5%8D%A1%20%E9%85%92%E5%BA%97%20%E5%85%AC%E5%AF%93",
+      "note": "马略卡酒店/公寓关键词"
+    },
+    {
+      "label": "飞猪",
+      "url": "https://s.fliggy.com/list.htm?q=%E9%A9%AC%E7%95%A5%E5%8D%A1%20%E9%85%92%E5%BA%97%20%E5%85%AC%E5%AF%93&checkIn=2026-12-04&checkOut=2027-01-06",
+      "note": "马略卡酒店/公寓关键词"
+    },
+    {
+      "label": "Booking",
+      "url": "https://www.booking.com/searchresults.html?ss=Mallorca%2C%20Spain&checkin=2026-12-04&checkout=2027-01-06&group_adults=2&no_rooms=1&group_children=0&nflt=ht_id%3D201%3Bht_id%3D220",
+      "note": "优先公寓/公寓式酒店筛选"
+    },
+    {
+      "label": "Hotels.com",
+      "url": "https://www.hotels.com/Hotel-Search?destination=Mallorca%2C%20Balearic%20Islands%2C%20Spain&startDate=2026-12-04&endDate=2027-01-06&rooms=1&adults=2",
+      "note": "马略卡，2 成人，1 间"
+    },
+    {
+      "label": "Agoda",
+      "url": "https://www.agoda.com/search?checkIn=2026-12-04&los=33&rooms=1&adults=2&children=0&searchText=Mallorca%2C%20Spain",
+      "note": "33 晚，马略卡关键词"
+    },
+    {
+      "label": "Expedia",
+      "url": "https://www.expedia.com/Hotel-Search?destination=Mallorca%2C%20Balearic%20Islands%2C%20Spain&startDate=2026-12-04&endDate=2027-01-06&rooms=1&adults=2",
+      "note": "马略卡，2 成人，1 间"
+    },
+    {
+      "label": "Airbnb",
+      "url": "https://www.airbnb.com/s/Mallorca--Spain/homes?checkin=2026-12-04&checkout=2027-01-06&adults=2&query=Mallorca%2C%20Spain",
+      "note": "整套房/公寓入口"
+    },
+    {
+      "label": "Vrbo",
+      "url": "https://www.vrbo.com/search?destination=Mallorca%2C%20Balearic%20Islands%2C%20Spain&startDate=2026-12-04&endDate=2027-01-06&adults=2",
+      "note": "度假公寓/整套房入口"
+    },
+    {
+      "label": "INN 官网",
+      "url": "https://www.mallorcasuites.eu/en/inn-mallorca-aparthotel/apartments/",
+      "note": "官网房型入口，打开后核对日期"
+    },
+    {
+      "label": "Ponent Mar 官网",
+      "url": "https://www.ponentmar.com/en/HotelAparthotelPonentMarRoomApartamentosConfort/",
+      "note": "官网房型入口，打开后核对日期"
+    }
   ],
   "questions": [
     "Premium Monthly 是否可按任意连续 30 天使用？",
