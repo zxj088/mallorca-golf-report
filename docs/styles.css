@@ -115,7 +115,7 @@ h2 {
 }
 
 .hero-actions span,
-.chips span {
+.chips a {
   display: inline-flex;
   min-height: 36px;
   align-items: center;
@@ -338,16 +338,47 @@ li + li {
   font-size: 0.92rem;
 }
 
+.channel-note {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.65;
+}
+
 .chips {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.chips span {
+.chips a {
+  flex-direction: column;
+  align-items: flex-start;
   border-color: var(--line);
   background: #f2f7f4;
   color: var(--deep-green);
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.chips a:hover {
+  border-color: rgba(31, 109, 75, 0.5);
+  background: #e7f2ec;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.chips strong {
+  font-size: 0.95rem;
+}
+
+.chips a span {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.35;
 }
 
 .questions {
