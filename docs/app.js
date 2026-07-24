@@ -42,9 +42,23 @@ function renderReport(report) {
     )
     .join("");
 
+  const lodgingSearch = report.lodgingSearch;
   $("#channels").innerHTML = report.lodgingChannels
-    .map((channel) => `<span>${channel}</span>`)
+    .map(
+      (channel) => `
+        <a href="${channel.url}" target="_blank" rel="noreferrer">
+          <strong>${channel.label}</strong>
+          <span>${channel.note}</span>
+        </a>
+      `,
+    )
     .join("");
+  if (lodgingSearch?.note) {
+    $("#channels").insertAdjacentHTML(
+      "beforebegin",
+      `<p class="channel-note">查询条件：${lodgingSearch.checkIn} 入住，${lodgingSearch.checkOut} 退房，${lodgingSearch.adults} 位成人，${lodgingSearch.rooms} 间/套。${lodgingSearch.note}</p>`,
+    );
+  }
 
   $("#questions").innerHTML = report.questions
     .map((question) => `<li>${question}</li>`)
