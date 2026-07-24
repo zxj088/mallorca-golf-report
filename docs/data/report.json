@@ -1,0 +1,102 @@
+{
+  "lastUpdated": "2026-07-24",
+  "nextReview": "每周一自动检查",
+  "trip": {
+    "title": "马略卡高尔夫月住计划",
+    "origin": "Stockholm Arlanda (ARN)",
+    "destination": "Palma de Mallorca (PMI)",
+    "travellers": "2 人出行",
+    "golfers": "约 8 人打球，不需要团体 tee time",
+    "lodgingNeed": "可自己做饭，可接受公寓式酒店或正规公寓"
+  },
+  "recommendation": {
+    "primaryWindow": "2026-12-04 至 2027-01-05/06",
+    "golfWindow": "2026-12-05 至 2027-01-03",
+    "decision": "先锁可取消住宿；Arabella 月卡必须确认是否可跨月按连续 30 天使用。",
+    "confidence": "中高"
+  },
+  "alerts": [
+    {
+      "level": "high",
+      "title": "Arabella Premium Monthly 跨月规则未确认",
+      "detail": "2026 官方 PDF 显示 12 月/1 月 Premium Monthly 为 725 欧/人，unlimited buggy 为 195 欧/人；关键是月卡按自然月还是任意连续 30 天。"
+    },
+    {
+      "level": "medium",
+      "title": "Son Muntaner 12 月初刚完成果岭打孔",
+      "detail": "维护日期为 2026-11-30 至 2026-12-02。12 月 4/5 日可避开封场，但果岭可能仍在恢复期。"
+    },
+    {
+      "level": "medium",
+      "title": "住宿需跨渠道核对厨房配置",
+      "detail": "携程/Trip.com、去哪儿、飞猪可能支付和中文客服更方便，但房型翻译可能不精确，需要用官网英文房型页确认 kitchen/kitchenette。"
+    }
+  ],
+  "costs": [
+    { "item": "Arabella Premium Monthly", "amount": "725 欧/人", "note": "1 月、7 月、8 月、12 月价格" },
+    { "item": "Monthly unlimited buggy", "amount": "195 欧/人", "note": "需确认与月卡同期及雨后限制" },
+    { "item": "2 人 12 月月卡+buggy", "amount": "1,840 欧", "note": "按 2 名球员估算" },
+    { "item": "PMI 长租车 32-33 天", "amount": "900-1,600 欧", "note": "compact estate / compact SUV 级别目标区间" },
+    { "item": "低季旅游税 2 人 32 晚", "amount": "约 22 欧", "note": "3 星 aparthotel 粗算，现场可能另收" }
+  ],
+  "sections": {
+    "flights": [
+      "重点监控 2026-12-03 至 12-06 出发，2027-01-04 至 01-07 回程。",
+      "优先 ARN-PMI 直飞；同时监控 ARN-CPH/AMS/FRA/MUC/MAD/BCN-PMI 一次转机。",
+      "买票前核对 golf bag 费用、重量上限、是否需提前登记运动器材。"
+    ],
+    "golf": [
+      "Premium Monthly 12 月/1 月价格为 725 欧/人，buggy monthly 为 195 欧/人。",
+      "Daily Golf Licence：Son Muntaner / Son Vida / Son Quint 为 3 欧/人/天。",
+      "建议每周 4-5 场，优先 10:00-12:00 tee time。"
+    ],
+    "lodging": [
+      "首选 INN Mallorca Aparthotel / Apartamentos INN，因为去年住过且房型含 kitchenette。",
+      "高优先备选：Aparthotel Ponent Mar, Palmanova。",
+      "备选：Zafiro Palmanova，需确认冬季开放和 30 晚长住价。",
+      "新增正规公寓/serviced apartment：优先 Palmanova、Son Caliu、Magaluf、Torrenova、Santa Ponsa。"
+    ],
+    "car": [
+      "2 人 + 行李 + 球包，车型不要低于 compact estate / compact SUV。",
+      "优先 full-to-full、低免赔或零免赔、可取消。",
+      "不建议最小车型，长住行李和球包会明显受限。"
+    ]
+  },
+  "lodgingChannels": [
+    "携程/Trip.com",
+    "去哪儿",
+    "飞猪",
+    "酒店官网",
+    "Booking",
+    "Hotels.com",
+    "Agoda",
+    "Expedia",
+    "Airbnb",
+    "Vrbo"
+  ],
+  "questions": [
+    "Premium Monthly 是否可按任意连续 30 天使用？",
+    "12 月 5 日至 1 月 3 日是否需要 Dec + Jan 两个月？",
+    "Unlimited buggy monthly 是否跨月，雨后是否只能 cart path only？",
+    "住宿是否真正可做饭，是否有炉灶、冰箱、微波炉、锅具、餐具？",
+    "停车、暖气、洗衣、Wi-Fi、清洁费、押金、旅游税是否已包含？"
+  ],
+  "sources": [
+    { "label": "Arabella Golf Mallorca Members 2026", "url": "https://arabellagolfmallorca.com/en/members/" },
+    { "label": "Arabella 2026 Membership PDF", "url": "https://arabellagolfmallorca.com/wp-content/uploads/2026/01/Members_2026_rev_QR.pdf" },
+    { "label": "Arabella Rights and Obligations 2026 PDF", "url": "https://arabellagolfmallorca.com/wp-content/uploads/2026/04/Derechos_y_obligaciones_del_abonado_2026-EN_04.pdf" },
+    { "label": "Arabella 2026 greens maintenance", "url": "https://arabellagolfmallorca.com/mantenimiento-de-greens-2026-calendario-de-pinchados/" },
+    { "label": "Palma Airport car hire companies", "url": "https://www.aena.es/en/palma-de-mallorca/airport-services/car-hire.html" },
+    { "label": "AEMET Palma climate normals", "url": "https://www.aemet.es/en/serviciosclimaticos/datosclimatologicos/valoresclimatologicos?l=B278" },
+    { "label": "INN Mallorca Aparthotel rooms", "url": "https://www.mallorcasuites.eu/en/inn-mallorca-aparthotel/apartments/" },
+    { "label": "Aparthotel Ponent Mar rooms", "url": "https://www.ponentmar.com/en/HotelAparthotelPonentMarRoomApartamentosConfort/" },
+    { "label": "Zafiro Palmanova", "url": "https://www.zafirohotels.com/en/zafiro-palmanova/" },
+    { "label": "Balearic sustainable tourism tax", "url": "https://illessostenibles.travel/en/its-calculator" }
+  ],
+  "history": [
+    {
+      "date": "2026-07-24",
+      "summary": "加入中文住宿渠道和公寓选项；确认 Arabella 2026 月卡与 buggy 官方价格；主日期维持 2026-12-04 至 2027-01-05/06。"
+    }
+  ]
+}
