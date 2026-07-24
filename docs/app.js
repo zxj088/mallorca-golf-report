@@ -83,7 +83,7 @@ function renderReport(report) {
     .join("");
 }
 
-fetch("./data/report.json")
+fetch("./data/report.json?v=20260724-lodging-links")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Report data failed to load");
