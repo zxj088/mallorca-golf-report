@@ -1,8 +1,17 @@
 const $ = (selector) => document.querySelector(selector);
 
+function escapeHtml(value) {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
 function renderList(id, items) {
   const node = $(id);
-  node.innerHTML = items.map((item) => `<li>${item}</li>`).join("");
+  node.innerHTML = items.map((item) => `<li>${escapeHtml(item)}</li>`).join("");
 }
 
 function renderPickCards(id, picks) {
@@ -12,12 +21,12 @@ function renderPickCards(id, picks) {
       (pick) => `
         <article class="pick-card">
           <div>
-            <h3>${pick.title}</h3>
-            <p class="pick-meta">${pick.dates || pick.distance}</p>
+            <h3>${escapeHtml(pick.title)}</h3>
+            <p class="pick-meta">${escapeHtml(pick.dates || pick.distance)}</p>
           </div>
-          <p class="pick-price">${pick.price}</p>
-          <p>${pick.why}</p>
-          <a class="pick-link" href="${pick.url}" target="_blank" rel="noreferrer">查看来源</a>
+          <p class="pick-price">${escapeHtml(pick.price)}</p>
+          <p>${escapeHtml(pick.why)}</p>
+          <a class="pick-link" href="${encodeURI(pick.url)}" target="_blank" rel="noopener noreferrer">查看来源 ↗</a>
         </article>
       `,
     )
@@ -37,8 +46,8 @@ function renderReport(report) {
     .map(
       (alert) => `
         <article class="alert ${alert.level}">
-          <strong>${alert.title}</strong>
-          <p>${alert.detail}</p>
+          <strong>${escapeHtml(alert.title)}</strong>
+          <p>${escapeHtml(alert.detail)}</p>
         </article>
       `,
     )
@@ -56,9 +65,9 @@ function renderReport(report) {
     .map(
       (cost) => `
         <div class="cost-row">
-          <strong>${cost.item}</strong>
-          <span class="cost-amount">${cost.amount}</span>
-          <span class="cost-note">${cost.note}</span>
+          <strong>${escapeHtml(cost.item)}</strong>
+          <span class="cost-amount">${escapeHtml(cost.amount)}</span>
+          <span class="cost-note">${escapeHtml(cost.note)}</span>
         </div>
       `,
     )
@@ -68,9 +77,9 @@ function renderReport(report) {
   $("#channels").innerHTML = report.lodgingChannels
     .map(
       (channel) => `
-        <a href="${channel.url}" target="_blank" rel="noreferrer">
-          <strong>${channel.label}</strong>
-          <span>${channel.note}</span>
+        <a href="${encodeURI(channel.url)}" target="_blank" rel="noopener noreferrer">
+          <strong>${escapeHtml(channel.label)}</strong>
+          <span>${escapeHtml(channel.note)}</span>
         </a>
       `,
     )
@@ -78,20 +87,20 @@ function renderReport(report) {
   if (lodgingSearch?.note) {
     $("#channels").insertAdjacentHTML(
       "beforebegin",
-      `<p class="channel-note">查询条件：${lodgingSearch.checkIn} 入住，${lodgingSearch.checkOut} 退房，${lodgingSearch.adults} 位成人，${lodgingSearch.rooms} 间/套。${lodgingSearch.note}</p>`,
+      `<p class="channel-note">查询条件：${escapeHtml(lodgingSearch.checkIn)} 入住，${escapeHtml(lodgingSearch.checkOut)} 退房，${escapeHtml(lodgingSearch.adults)} 位成人，${escapeHtml(lodgingSearch.rooms)} 间/套。${escapeHtml(lodgingSearch.note)}</p>`,
     );
   }
 
   $("#questions").innerHTML = report.questions
-    .map((question) => `<li>${question}</li>`)
+    .map((question) => `<li>${escapeHtml(question)}</li>`)
     .join("");
 
   $("#history").innerHTML = report.history
     .map(
       (entry) => `
         <article class="history-item">
-          <time>${entry.date}</time>
-          <p>${entry.summary}</p>
+          <time>${escapeHtml(entry.date)}</time>
+          <p>${escapeHtml(entry.summary)}</p>
         </article>
       `,
     )
@@ -100,12 +109,12 @@ function renderReport(report) {
   $("#sources").innerHTML = report.sources
     .map(
       (source) =>
-        `<a href="${source.url}" target="_blank" rel="noreferrer">${source.label}</a>`,
+        `<a href="${encodeURI(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)} ↗</a>`,
     )
     .join("");
 }
 
-fetch("./data/report.json?v=20260725-sek-combos")
+fetch("./data/report.json?v=20260725-sites")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Report data failed to load");
