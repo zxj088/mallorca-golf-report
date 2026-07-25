@@ -5,6 +5,25 @@ function renderList(id, items) {
   node.innerHTML = items.map((item) => `<li>${item}</li>`).join("");
 }
 
+function renderPickCards(id, picks) {
+  const node = $(id);
+  node.innerHTML = picks
+    .map(
+      (pick) => `
+        <article class="pick-card">
+          <div>
+            <h3>${pick.title}</h3>
+            <p class="pick-meta">${pick.dates || pick.distance}</p>
+          </div>
+          <p class="pick-price">${pick.price}</p>
+          <p>${pick.why}</p>
+          <a class="pick-link" href="${pick.url}" target="_blank" rel="noreferrer">查看来源</a>
+        </article>
+      `,
+    )
+    .join("");
+}
+
 function renderReport(report) {
   $("#last-updated").textContent = `更新：${report.lastUpdated}`;
   $("#next-review").textContent = report.nextReview;
@@ -29,6 +48,8 @@ function renderReport(report) {
   renderList("#golf", report.sections.golf);
   renderList("#lodging", report.sections.lodging);
   renderList("#car", report.sections.car);
+  renderPickCards("#flight-picks", report.currentPicks.flights);
+  renderPickCards("#lodging-picks", report.currentPicks.lodging);
 
   $("#costs").innerHTML = report.costs
     .map(
@@ -83,7 +104,7 @@ function renderReport(report) {
     .join("");
 }
 
-fetch("./data/report.json?v=20260724-lodging-links")
+fetch("./data/report.json?v=20260725-recs")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Report data failed to load");
