@@ -10,6 +10,10 @@
   --sea: #237c89;
   --sun: #d99b35;
   --rose: #a84e42;
+  --flight: #2f6fa3;
+  --lodging: #b56b2f;
+  --car: #287c73;
+  --golf: #4f7742;
   --shadow: 0 20px 50px rgba(30, 48, 42, 0.12);
   --radius: 18px;
 }
@@ -364,6 +368,54 @@ h2 {
   margin-bottom: 16px;
 }
 
+.fold-heading,
+.panel-head,
+.alert summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.fold-heading::-webkit-details-marker,
+.panel-head::-webkit-details-marker,
+.alert summary::-webkit-details-marker {
+  display: none;
+}
+
+.fold-heading strong {
+  display: block;
+  color: var(--ink);
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+
+.fold-label {
+  flex: 0 0 auto;
+  border-radius: 999px;
+  padding: 6px 10px;
+  background: #e7f2ec;
+  color: var(--deep-green);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+details[open] > summary .fold-label::before {
+  content: "收起";
+  font-size: 0;
+}
+
+details[open] > summary .fold-label {
+  font-size: 0;
+}
+
+details[open] > summary .fold-label::after {
+  content: "收起";
+  font-size: 0.78rem;
+}
+
 .section-heading.compact {
   margin-top: 0;
 }
@@ -393,8 +445,15 @@ h2 {
 
 .alert strong {
   display: block;
-  margin-bottom: 10px;
   font-size: 1.05rem;
+}
+
+.alert summary {
+  align-items: flex-start;
+}
+
+.alert[open] summary {
+  margin-bottom: 10px;
 }
 
 .alert p,
@@ -406,10 +465,82 @@ li,
 }
 
 .panel-head {
-  display: flex;
   gap: 10px;
-  align-items: center;
   margin-bottom: 12px;
+}
+
+.panel-head h2 {
+  margin-right: auto;
+}
+
+.info-panel:not([open]) .panel-head {
+  margin-bottom: 0;
+}
+
+.info-panel {
+  border-top: 4px solid var(--green);
+}
+
+.info-flight {
+  border-top-color: var(--flight);
+}
+
+.info-flight .icon {
+  background: #e4eff8;
+  color: var(--flight);
+}
+
+.info-golf {
+  border-top-color: var(--golf);
+}
+
+.info-golf .icon {
+  background: #e8f1e3;
+  color: var(--golf);
+}
+
+.info-lodging {
+  border-top-color: var(--lodging);
+}
+
+.info-lodging .icon {
+  background: #f8ebdf;
+  color: var(--lodging);
+}
+
+.info-car {
+  border-top-color: var(--car);
+}
+
+.info-car .icon {
+  background: #e1f1ef;
+  color: var(--car);
+}
+
+.pick-panel {
+  border-top: 4px solid var(--green);
+}
+
+.pick-combo {
+  border-top-color: var(--deep-green);
+}
+
+.pick-flight {
+  border-top-color: var(--flight);
+}
+
+.pick-flight .eyebrow,
+.pick-flight .pick-card h3 {
+  color: var(--flight);
+}
+
+.pick-lodging {
+  border-top-color: var(--lodging);
+}
+
+.pick-lodging .eyebrow,
+.pick-lodging .pick-card h3 {
+  color: var(--lodging);
 }
 
 .icon {

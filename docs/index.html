@@ -14,7 +14,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="/og.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="stylesheet" href="./styles.css?v=20260725-sites" />
+    <link rel="stylesheet" href="./styles.css?v=20260725-folds" />
   </head>
   <body>
     <header class="site-header">
@@ -81,34 +81,38 @@
       </section>
 
       <section class="content-grid">
-        <article class="info-panel">
-          <div class="panel-head">
+        <details class="info-panel info-flight">
+          <summary class="panel-head">
             <span class="icon">✈</span>
             <h2>航班</h2>
-          </div>
+            <span class="fold-label">展开</span>
+          </summary>
           <ul id="flights"></ul>
-        </article>
-        <article class="info-panel">
-          <div class="panel-head">
+        </details>
+        <details class="info-panel info-golf">
+          <summary class="panel-head">
             <span class="icon">⛳</span>
             <h2>高尔夫</h2>
-          </div>
+            <span class="fold-label">展开</span>
+          </summary>
           <ul id="golf"></ul>
-        </article>
-        <article class="info-panel">
-          <div class="panel-head">
+        </details>
+        <details class="info-panel info-lodging">
+          <summary class="panel-head">
             <span class="icon">⌂</span>
             <h2>住宿</h2>
-          </div>
+            <span class="fold-label">展开</span>
+          </summary>
           <ul id="lodging"></ul>
-        </article>
-        <article class="info-panel">
-          <div class="panel-head">
+        </details>
+        <details class="info-panel info-car">
+          <summary class="panel-head">
             <span class="icon">▣</span>
             <h2>租车</h2>
-          </div>
+            <span class="fold-label">展开</span>
+          </summary>
           <ul id="car"></ul>
-        </article>
+        </details>
       </section>
 
       <section class="picks-section" id="recommendations">
@@ -117,21 +121,21 @@
           <h2>当前具体推荐</h2>
         </div>
         <div class="picks-grid">
-          <article class="pick-panel combo-panel">
+          <article class="pick-panel combo-panel pick-combo">
             <div class="section-heading compact">
               <p class="eyebrow">Best Combo</p>
               <h2>机票住宿组合</h2>
             </div>
             <div id="combo-picks" class="pick-list"></div>
           </article>
-          <article class="pick-panel">
+          <article class="pick-panel pick-flight">
             <div class="section-heading compact">
               <p class="eyebrow">Flights</p>
               <h2>机票两选</h2>
             </div>
             <div id="flight-picks" class="pick-list"></div>
           </article>
-          <article class="pick-panel">
+          <article class="pick-panel pick-lodging">
             <div class="section-heading compact">
               <p class="eyebrow">Lodging</p>
               <h2>住宿两选</h2>
@@ -142,13 +146,16 @@
       </section>
 
       <section class="split-section" id="budget">
-        <article class="table-panel">
-          <div class="section-heading compact">
-            <p class="eyebrow">Budget Signals</p>
-            <h2>费用信号</h2>
-          </div>
+        <details class="table-panel">
+          <summary class="section-heading compact fold-heading">
+            <span>
+              <span class="eyebrow">Budget Signals</span>
+              <strong>费用信号</strong>
+            </span>
+            <span class="fold-label">展开</span>
+          </summary>
           <div id="costs" class="cost-list"></div>
-        </article>
+        </details>
         <article class="channel-panel">
           <div class="section-heading compact">
             <p class="eyebrow">Lodging Search</p>
@@ -166,26 +173,32 @@
         <ol id="questions" class="questions"></ol>
       </section>
 
-      <section class="timeline-section">
-        <div class="section-heading">
-          <p class="eyebrow">History</p>
-          <h2>更新记录</h2>
-        </div>
+      <details class="timeline-section">
+        <summary class="section-heading fold-heading">
+          <span>
+            <span class="eyebrow">History</span>
+            <strong>更新记录</strong>
+          </span>
+          <span class="fold-label">展开</span>
+        </summary>
         <div id="history" class="history"></div>
-      </section>
+      </details>
 
-      <section class="sources-section">
-        <div class="section-heading compact">
-          <p class="eyebrow">Sources</p>
-          <h2>主要来源</h2>
-        </div>
+      <details class="sources-section">
+        <summary class="section-heading compact fold-heading">
+          <span>
+            <span class="eyebrow">Sources</span>
+            <strong>主要来源</strong>
+          </span>
+          <span class="fold-label">展开</span>
+        </summary>
         <div id="sources" class="sources"></div>
-      </section>
+      </details>
     </main>
     <footer>
       <p>这是一份持续更新的决策看板。价格与规则请在预订前向服务商复核。</p>
       <a href="#top">返回顶部 ↑</a>
     </footer>
-    <script src="./app.js?v=20260725-sites"></script>
+    <script src="./app.js?v=20260725-folds"></script>
   </body>
 </html>

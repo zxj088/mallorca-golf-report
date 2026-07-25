@@ -45,10 +45,13 @@ function renderReport(report) {
   $("#alerts").innerHTML = report.alerts
     .map(
       (alert) => `
-        <article class="alert ${alert.level}">
-          <strong>${escapeHtml(alert.title)}</strong>
+        <details class="alert ${alert.level}">
+          <summary>
+            <strong>${escapeHtml(alert.title)}</strong>
+            <span class="fold-label">展开</span>
+          </summary>
           <p>${escapeHtml(alert.detail)}</p>
-        </article>
+        </details>
       `,
     )
     .join("");
@@ -114,7 +117,7 @@ function renderReport(report) {
     .join("");
 }
 
-fetch("./data/report.json?v=20260725-sites")
+fetch("./data/report.json?v=20260725-folds")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Report data failed to load");

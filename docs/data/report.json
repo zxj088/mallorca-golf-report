@@ -7,12 +7,12 @@
     "destination": "Palma de Mallorca (PMI)",
     "travellers": "2 人出行",
     "golfers": "约 8 人打球，不需要团体 tee time",
-    "lodgingNeed": "可自己做饭，可接受公寓式酒店或正规公寓；住宿总价目标不超过 20,000 SEK"
+    "lodgingNeed": "可自己做饭、停车方便、尽量不在市中心；可接受公寓式酒店或正规公寓；住宿总价目标不超过 20,000 SEK"
   },
   "recommendation": {
     "primaryWindow": "2026-12-03/06 至 2027-01-04/07",
     "golfWindow": "2026-12-05 至 2027-01-03",
-    "decision": "按 Arabella Premium Monthly 可覆盖任意连续 30 天处理；先找 Arabella 20 公里内、可洗衣做饭、总价不超过 20,000 SEK 的公寓。",
+    "decision": "Arabella Premium Monthly 已确认覆盖连续 30 天；先找球场 20 公里内、可洗衣做饭、停车方便、尽量避开市中心且总价不超过 20,000 SEK 的公寓。",
     "confidence": "高，价格仍需下单前复核"
   },
   "currentPicks": {
@@ -69,7 +69,7 @@
     {
       "level": "high",
       "title": "Arabella Premium Monthly 按连续 30 天规划",
-      "detail": "按你确认的信息，12 月 5 日至 1 月 3 日应由一张 Premium Monthly 覆盖，不需要 Dec + Jan 两个月。后续只复核官网/柜台最终写法。"
+      "detail": "已确认 12 月 5 日至 1 月 3 日由一张 Premium Monthly 覆盖，不需要 Dec + Jan 两个月。"
     },
     {
       "level": "medium",
@@ -79,7 +79,7 @@
     {
       "level": "medium",
       "title": "住宿优先 Arabella 球场 20 公里内",
-      "detail": "住宿总价上限改为 20,000 SEK，优先 Bonanova / Porto Pi / Son Vida / Genova / Cala Major / Cas Catala / Palma 西区；Palmanova、Son Caliu 可作为备选。公寓优先，因为能洗衣、做饭和长住。"
+      "detail": "住宿总价上限为 20,000 SEK，并需停车方便、尽量不在市中心。优先 Son Vida 外围、Genova、Cala Major、Cas Catala、Palmanova、Son Caliu；公寓优先，因为能洗衣、做饭和长住。"
     },
     {
       "level": "medium",
@@ -114,8 +114,8 @@
       "核心筛选：Arabella Golf Mallorca 的 Son Quint / Son Muntaner / Son Vida 20 公里范围内。",
       "住宿总价上限为 20,000 SEK，按 33 晚约等于 606 SEK/晚；超出即降级为参考，不作为推荐。",
       "优先正规公寓或 serviced apartment：厨房、洗衣机、暖气、停车和 Wi-Fi 比酒店早餐更重要。",
-      "首选区域：Bonanova、Porto Pi、Son Vida、Genova、Cala Major、Cas Catala、Palma 西区。",
-      "INN Mallorca / Palmanova 作为熟悉备选；若价格明显便宜可保留，但距离 Arabella 不如 Porto Pi / Bonanova。"
+      "停车必须方便，尽量避开 Palma 市中心；优先 Son Vida 外围、Genova、Cala Major、Cas Catala、Palmanova、Son Caliu。",
+      "INN Mallorca / Palmanova 作为熟悉备选；若价格明显便宜且停车条件好可优先保留。"
     ],
     "car": [
       "每日监控 PMI 机场 32-33 天租车好价；2 人 + 行李 + 球包，车型不要低于 compact estate / compact SUV。",
@@ -128,8 +128,8 @@
     "checkOut": "2027-01-06",
     "adults": 2,
     "rooms": 1,
-    "primaryArea": "Arabella Golf 20 km: Bonanova / Porto Pi / Son Vida / Genova / Cala Major",
-    "note": "住宿总价目标不超过 20,000 SEK；主按钮优先保留能稳定带入日期/人数或直达预算相关搜索的链接。携程、去哪儿、飞猪目前搜索参数不稳定，作为手动复核渠道。"
+    "primaryArea": "Arabella Golf 20 km: Son Vida outskirts / Genova / Cala Major / Cas Catala / Palmanova",
+    "note": "住宿总价目标不超过 20,000 SEK；必须停车方便，尽量不在市中心。主按钮优先保留能稳定带入日期/人数或直达预算相关搜索的链接。"
   },
   "lodgingChannels": [
     {
@@ -179,11 +179,8 @@
     }
   ],
   "questions": [
-    "向 Arabella 书面复核：Premium Monthly 是否明确按任意连续 30 天开卡？",
-    "向 Arabella 书面复核：约 110 SEK/月保险是否覆盖三座主球场且无需 Daily Golf Licence？",
-    "Unlimited buggy monthly 是否跨月，雨后是否只能 cart path only？",
-    "住宿是否在 Son Quint / Son Muntaner / Son Vida 20 公里内，且总价是否不超过 20,000 SEK？",
-    "停车、暖气、洗衣、Wi-Fi、清洁费、押金、旅游税是否已包含或另收？"
+    "候选住宿是否停车方便、尽量不在市中心，并同时满足厨房、暖气、洗衣和 Wi-Fi？",
+    "清洁费、押金、水电、停车费和旅游税计入后，总价是否仍不超过 20,000 SEK？"
   ],
   "sources": [
     { "label": "Arabella Golf Mallorca Members 2026", "url": "https://arabellagolfmallorca.com/en/members/" },
