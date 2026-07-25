@@ -161,6 +161,7 @@ h2 {
 
 .decision-grid,
 .content-grid,
+.picks-grid,
 .split-section {
   display: grid;
   gap: 18px;
@@ -179,9 +180,14 @@ h2 {
   grid-template-columns: 1.15fr 0.85fr;
 }
 
+.picks-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .decision-card,
 .route-card,
 .info-panel,
+.pick-panel,
 .table-panel,
 .channel-panel,
 .timeline-section,
@@ -194,6 +200,7 @@ h2 {
 .decision-card,
 .route-card,
 .info-panel,
+.pick-panel,
 .table-panel,
 .channel-panel,
 .timeline-section,
@@ -297,6 +304,62 @@ li,
   background: #e6f0eb;
   color: var(--green);
   font-weight: 800;
+}
+
+.pick-list {
+  display: grid;
+  gap: 14px;
+}
+
+.pick-card {
+  display: grid;
+  gap: 10px;
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+}
+
+.pick-card:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.pick-card h3 {
+  margin: 0 0 6px;
+  color: var(--deep-green);
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.pick-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.pick-meta {
+  font-weight: 700;
+}
+
+.pick-price {
+  border-left: 4px solid var(--sun);
+  padding-left: 10px;
+  color: var(--ink) !important;
+  font-weight: 700;
+}
+
+.pick-link {
+  justify-self: start;
+  min-height: 34px;
+  border: 1px solid rgba(31, 109, 75, 0.35);
+  padding: 7px 11px;
+  background: #edf5f1;
+  color: var(--deep-green);
+  font-weight: 800;
+}
+
+.pick-link:hover {
+  background: #e1eee8;
+  text-decoration: none;
 }
 
 ul,
@@ -420,6 +483,7 @@ li + li {
   .hero,
   .decision-grid,
   .content-grid,
+  .picks-grid,
   .split-section,
   .alerts,
   .questions {
@@ -449,6 +513,7 @@ li + li {
   .decision-card,
   .route-card,
   .info-panel,
+  .pick-panel,
   .table-panel,
   .channel-panel,
   .timeline-section,
