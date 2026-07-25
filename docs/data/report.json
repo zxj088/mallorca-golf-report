@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-24",
-  "nextReview": "每周一自动检查",
+  "lastUpdated": "2026-07-25",
+  "nextReview": "每天自动检查好价",
   "trip": {
     "title": "马略卡高尔夫月住计划",
     "origin": "Stockholm Arlanda (ARN)",
@@ -10,16 +10,50 @@
     "lodgingNeed": "可自己做饭，可接受公寓式酒店或正规公寓"
   },
   "recommendation": {
-    "primaryWindow": "2026-12-04 至 2027-01-05/06",
+    "primaryWindow": "2026-12-03/06 至 2027-01-04/07",
     "golfWindow": "2026-12-05 至 2027-01-03",
-    "decision": "先锁可取消住宿；Arabella 月卡必须确认是否可跨月按连续 30 天使用。",
-    "confidence": "中高"
+    "decision": "按 Arabella Premium Monthly 可覆盖任意连续 30 天处理；先锁 Arabella 15 公里内、可取消、可洗衣做饭的公寓。",
+    "confidence": "高，价格仍需下单前复核"
+  },
+  "currentPicks": {
+    "flights": [
+      {
+        "title": "稳妥航司方案：Lufthansa / SWISS 一次转机",
+        "dates": "去程 2026-12-04 左右，回程 2027-01-05 至 01-07",
+        "price": "Lufthansa 官方 STO-PMI 12 月票价信号约 1,689 SEK/人；Expedia 显示 12/04-12/07 SWISS $175/人、Lufthansa $186/人",
+        "why": "适合带托运行李和球包，转机航司规则通常比廉航更清楚；用 12/04 作为主搜索日，回程在 01/04-01/07 之间比价。",
+        "url": "https://www.lufthansa.com/lhg/se/en/o-d/cy-cy/stockholm-palma-de-mallorca"
+      },
+      {
+        "title": "直飞低成本方案：Norwegian / SAS / Ryanair",
+        "dates": "去程 2026-12-03 至 12-06，回程 2027-01-04 至 01-07",
+        "price": "KAYAK 当前 ARN-PMI 往返低价信号 $109 起，典型区间 $146-$327；FlightsFrom 显示 ARN-PMI 12 月直飞往返均价约 $128",
+        "why": "直飞 3 小时 45-50 分钟最省时间；买前必须把球包、座位、托运行李和付款手续费加总后再比较。",
+        "url": "https://www.kayak.com/flight-routes/Stockholm-Arlanda-ARN/Palma-de-Mallorca-Son-Sant-Joan-PMI"
+      }
+    ],
+    "lodging": [
+      {
+        "title": "Polar Mallorca 202 - Porto Pi / Bonanova",
+        "distance": "Son Quint 7.5 km；Son Muntaner / Son Vida 8.5 km",
+        "price": "2026-10-01 至 12-31 官网价 from €700/周；33 晚按周价估算约 €3,365（含 €65 清洁费，1 月 1-6 日需询价确认）",
+        "why": "46 m²，一卧双床，独立厨房，洗衣机，靠近 Porto Pi 超市和环路；最贴合 2 人长住打球。",
+        "url": "https://polarmallorca.com/en/rentals/apartment-palma-202-apartamento-en-zona-porto-pi-489340.html"
+      },
+      {
+        "title": "Polar Mallorca 002 - Porto Pi / Bonanova",
+        "distance": "Son Quint 7.5 km；Son Muntaner / Son Vida 8.5 km",
+        "price": "2026-10-14 至 12-31 官网价 from €770/周；33 晚按周价估算约 €3,695（含 €65 清洁费，€300 押金另计且可退，1 月 1-6 日需询价确认）",
+        "why": "52 m²，露台，厨房，洗衣机，暖气/空调和 Wi-Fi；同样在 Arabella 主球场 15 公里内。",
+        "url": "https://polarmallorca.com/en/rentals/apartment-palma-002-apartamento-en-zona-porto-pi-489356.html"
+      }
+    ]
   },
   "alerts": [
     {
       "level": "high",
-      "title": "Arabella Premium Monthly 跨月规则未确认",
-      "detail": "2026 官方 PDF 显示 12 月/1 月 Premium Monthly 为 725 欧/人，unlimited buggy 为 195 欧/人；关键是月卡按自然月还是任意连续 30 天。"
+      "title": "Arabella Premium Monthly 按连续 30 天规划",
+      "detail": "按你确认的信息，12 月 5 日至 1 月 3 日应由一张 Premium Monthly 覆盖，不需要 Dec + Jan 两个月。后续只复核官网/柜台最终写法。"
     },
     {
       "level": "medium",
@@ -28,36 +62,39 @@
     },
     {
       "level": "medium",
-      "title": "住宿需跨渠道核对厨房配置",
-      "detail": "携程/Trip.com、去哪儿、飞猪可能支付和中文客服更方便，但房型翻译可能不精确，需要用官网英文房型页确认 kitchen/kitchenette。"
+      "title": "住宿优先 Arabella 球场 15 公里内",
+      "detail": "优先 Bonanova / Porto Pi / Son Vida / Genova / Cala Major / Cas Catala / Palma 西区；Palmanova、Son Caliu 可作为备选，Santa Ponsa 距离偏远。公寓优先，因为能洗衣、做饭和长住。"
     }
   ],
   "costs": [
     { "item": "Arabella Premium Monthly", "amount": "725 欧/人", "note": "1 月、7 月、8 月、12 月价格" },
     { "item": "Monthly unlimited buggy", "amount": "195 欧/人", "note": "需确认与月卡同期及雨后限制" },
-    { "item": "2 人 12 月月卡+buggy", "amount": "1,840 欧", "note": "按 2 名球员估算" },
+    { "item": "Monthly insurance", "amount": "10 欧/人/月", "note": "按你确认的月保险处理，不再计 Daily Golf Licence" },
+    { "item": "2 人月卡+buggy+保险", "amount": "1,860 欧", "note": "按 2 名球员估算：725+195+10 欧/人" },
+    { "item": "Polar Mallorca 202 估算", "amount": "约 3,365 欧/33 晚", "note": "按 €700/周 + €65 清洁费估算，1 月 1-6 日需询价" },
+    { "item": "Polar Mallorca 002 估算", "amount": "约 3,695 欧/33 晚", "note": "按 €770/周 + €65 清洁费估算，押金另计且可退" },
     { "item": "PMI 长租车 32-33 天", "amount": "900-1,600 欧", "note": "compact estate / compact SUV 级别目标区间" },
     { "item": "低季旅游税 2 人 32 晚", "amount": "约 22 欧", "note": "3 星 aparthotel 粗算，现场可能另收" }
   ],
   "sections": {
     "flights": [
-      "重点监控 2026-12-03 至 12-06 出发，2027-01-04 至 01-07 回程。",
+      "每日监控 2026-12-03 至 12-06 出发，2027-01-04 至 01-07 回程的好价。",
       "优先 ARN-PMI 直飞；同时监控 ARN-CPH/AMS/FRA/MUC/MAD/BCN-PMI 一次转机。",
       "买票前核对 golf bag 费用、重量上限、是否需提前登记运动器材。"
     ],
     "golf": [
       "Premium Monthly 12 月/1 月价格为 725 欧/人，buggy monthly 为 195 欧/人。",
-      "Daily Golf Licence：Son Muntaner / Son Vida / Son Quint 为 3 欧/人/天。",
+      "按月度会员另付 10 欧/人/月保险处理，不再按 Son Muntaner / Son Vida / Son Quint 的 Daily Golf Licence 3 欧/人/天估算。",
       "建议每周 4-5 场，优先 10:00-12:00 tee time。"
     ],
     "lodging": [
-      "首选 INN Mallorca Aparthotel / Apartamentos INN，因为去年住过且房型含 kitchenette。",
-      "高优先备选：Aparthotel Ponent Mar, Palmanova。",
-      "备选：Zafiro Palmanova，需确认冬季开放和 30 晚长住价。",
-      "新增正规公寓/serviced apartment：优先 Palmanova、Son Caliu、Magaluf、Torrenova、Santa Ponsa。"
+      "核心筛选：Arabella Golf Mallorca 的 Son Quint / Son Muntaner / Son Vida 15 公里范围内。",
+      "优先正规公寓或 serviced apartment：厨房、洗衣机、暖气、停车和 Wi-Fi 比酒店早餐更重要。",
+      "首选区域：Bonanova、Porto Pi、Son Vida、Genova、Cala Major、Cas Catala、Palma 西区。",
+      "INN Mallorca / Palmanova 作为熟悉备选；若价格明显便宜可保留，但距离 Arabella 不如 Porto Pi / Bonanova。"
     ],
     "car": [
-      "2 人 + 行李 + 球包，车型不要低于 compact estate / compact SUV。",
+      "每日监控 PMI 机场 32-33 天租车好价；2 人 + 行李 + 球包，车型不要低于 compact estate / compact SUV。",
       "优先 full-to-full、低免赔或零免赔、可取消。",
       "不建议最小车型，长住行李和球包会明显受限。"
     ]
@@ -67,76 +104,56 @@
     "checkOut": "2027-01-06",
     "adults": 2,
     "rooms": 1,
-    "primaryArea": "Mallorca / Palmanova / Magaluf",
-    "note": "打开后请核对日期、人数、地点和是否为可做饭房型；部分中文网站可能会按语言或定位自动改写搜索条件。"
+    "primaryArea": "Arabella Golf 15 km: Bonanova / Porto Pi / Son Vida / Genova / Cala Major",
+    "note": "主按钮只保留能稳定带入日期/人数或直达具体房源的链接；携程、去哪儿、飞猪目前搜索参数不稳定，作为手动复核渠道。"
   },
   "lodgingChannels": [
     {
-      "label": "携程 / Trip.com",
-      "url": "https://www.trip.com/hotels/list?checkin=2026-12-04&checkout=2027-01-06&adults=2&rooms=1&searchword=Mallorca%20Spain",
-      "note": "马略卡，12/04-01/06，2 成人"
-    },
-    {
-      "label": "携程国际酒店",
-      "url": "https://hotels.ctrip.com/international/list?checkin=2026-12-04&checkout=2027-01-06&adults=2&rooms=1&keyword=Mallorca",
-      "note": "中文界面，马略卡关键词"
-    },
-    {
-      "label": "去哪儿",
-      "url": "https://hotel.qunar.com/?fromDate=2026-12-04&toDate=2027-01-06&q=%E9%A9%AC%E7%95%A5%E5%8D%A1%20%E9%85%92%E5%BA%97%20%E5%85%AC%E5%AF%93",
-      "note": "马略卡酒店/公寓关键词"
-    },
-    {
-      "label": "飞猪",
-      "url": "https://s.fliggy.com/list.htm?q=%E9%A9%AC%E7%95%A5%E5%8D%A1%20%E9%85%92%E5%BA%97%20%E5%85%AC%E5%AF%93&checkIn=2026-12-04&checkOut=2027-01-06",
-      "note": "马略卡酒店/公寓关键词"
-    },
-    {
       "label": "Booking",
-      "url": "https://www.booking.com/searchresults.html?ss=Mallorca%2C%20Spain&checkin=2026-12-04&checkout=2027-01-06&group_adults=2&no_rooms=1&group_children=0&nflt=ht_id%3D201%3Bht_id%3D220",
-      "note": "优先公寓/公寓式酒店筛选"
+      "url": "https://www.booking.com/searchresults.html?ss=Porto%20Pi%2C%20Palma%20de%20Mallorca%2C%20Spain&checkin=2026-12-04&checkout=2027-01-06&group_adults=2&no_rooms=1&group_children=0&nflt=ht_id%3D201%3Bht_id%3D220",
+      "note": "Porto Pi，公寓/公寓式酒店"
     },
     {
       "label": "Hotels.com",
-      "url": "https://www.hotels.com/Hotel-Search?destination=Mallorca%2C%20Balearic%20Islands%2C%20Spain&startDate=2026-12-04&endDate=2027-01-06&rooms=1&adults=2",
-      "note": "马略卡，2 成人，1 间"
-    },
-    {
-      "label": "Agoda",
-      "url": "https://www.agoda.com/search?checkIn=2026-12-04&los=33&rooms=1&adults=2&children=0&searchText=Mallorca%2C%20Spain",
-      "note": "33 晚，马略卡关键词"
+      "url": "https://www.hotels.com/Hotel-Search?destination=Porto%20Pi%2C%20Palma%20de%20Mallorca%2C%20Balearic%20Islands%2C%20Spain&startDate=2026-12-04&endDate=2027-01-06&rooms=1&adults=2",
+      "note": "Porto Pi / Palma 西区"
     },
     {
       "label": "Expedia",
-      "url": "https://www.expedia.com/Hotel-Search?destination=Mallorca%2C%20Balearic%20Islands%2C%20Spain&startDate=2026-12-04&endDate=2027-01-06&rooms=1&adults=2",
-      "note": "马略卡，2 成人，1 间"
+      "url": "https://www.expedia.com/Hotel-Search?destination=Porto%20Pi%2C%20Palma%20de%20Mallorca%2C%20Balearic%20Islands%2C%20Spain&startDate=2026-12-04&endDate=2027-01-06&rooms=1&adults=2",
+      "note": "Porto Pi，2 成人，1 间/套"
     },
     {
       "label": "Airbnb",
-      "url": "https://www.airbnb.com/s/Mallorca--Spain/homes?checkin=2026-12-04&checkout=2027-01-06&adults=2&query=Mallorca%2C%20Spain",
-      "note": "整套房/公寓入口"
+      "url": "https://www.airbnb.com/s/Porto-Pi--Palma--Spain/homes?checkin=2026-12-04&checkout=2027-01-06&adults=2&query=Porto%20Pi%2C%20Palma%2C%20Spain",
+      "note": "Porto Pi 整套房/公寓"
     },
     {
       "label": "Vrbo",
-      "url": "https://www.vrbo.com/search?destination=Mallorca%2C%20Balearic%20Islands%2C%20Spain&startDate=2026-12-04&endDate=2027-01-06&adults=2",
-      "note": "度假公寓/整套房入口"
+      "url": "https://www.vrbo.com/search?destination=Porto%20Pi%2C%20Palma%20de%20Mallorca%2C%20Balearic%20Islands%2C%20Spain&startDate=2026-12-04&endDate=2027-01-06&adults=2",
+      "note": "Porto Pi 度假公寓"
+    },
+    {
+      "label": "Polar 202",
+      "url": "https://polarmallorca.com/en/rentals/apartment-palma-202-apartamento-en-zona-porto-pi-489340.html",
+      "note": "具体推荐，官网房源页"
+    },
+    {
+      "label": "Polar 002",
+      "url": "https://polarmallorca.com/en/rentals/apartment-palma-002-apartamento-en-zona-porto-pi-489356.html",
+      "note": "具体推荐，官网房源页"
     },
     {
       "label": "INN 官网",
       "url": "https://www.mallorcasuites.eu/en/inn-mallorca-aparthotel/apartments/",
-      "note": "官网房型入口，打开后核对日期"
-    },
-    {
-      "label": "Ponent Mar 官网",
-      "url": "https://www.ponentmar.com/en/HotelAparthotelPonentMarRoomApartamentosConfort/",
-      "note": "官网房型入口，打开后核对日期"
+      "note": "熟悉备选，官网房型入口"
     }
   ],
   "questions": [
-    "Premium Monthly 是否可按任意连续 30 天使用？",
-    "12 月 5 日至 1 月 3 日是否需要 Dec + Jan 两个月？",
+    "向 Arabella 书面复核：Premium Monthly 是否明确按任意连续 30 天开卡？",
+    "向 Arabella 书面复核：10 欧/月保险是否覆盖三座主球场且无需 Daily Golf Licence？",
     "Unlimited buggy monthly 是否跨月，雨后是否只能 cart path only？",
-    "住宿是否真正可做饭，是否有炉灶、冰箱、微波炉、锅具、餐具？",
+    "住宿是否在 Son Quint / Son Muntaner / Son Vida 15 公里内，是否有洗衣机？",
     "停车、暖气、洗衣、Wi-Fi、清洁费、押金、旅游税是否已包含？"
   ],
   "sources": [
@@ -149,9 +166,19 @@
     { "label": "INN Mallorca Aparthotel rooms", "url": "https://www.mallorcasuites.eu/en/inn-mallorca-aparthotel/apartments/" },
     { "label": "Aparthotel Ponent Mar rooms", "url": "https://www.ponentmar.com/en/HotelAparthotelPonentMarRoomApartamentosConfort/" },
     { "label": "Zafiro Palmanova", "url": "https://www.zafirohotels.com/en/zafiro-palmanova/" },
-    { "label": "Balearic sustainable tourism tax", "url": "https://illessostenibles.travel/en/its-calculator" }
+    { "label": "Balearic sustainable tourism tax", "url": "https://illessostenibles.travel/en/its-calculator" },
+    { "label": "KAYAK ARN-PMI fare signal", "url": "https://www.kayak.com/flight-routes/Stockholm-Arlanda-ARN/Palma-de-Mallorca-Son-Sant-Joan-PMI" },
+    { "label": "Expedia ARN-PMI fare signal", "url": "https://www.expedia.com/lp/flights/arn/pmi/stockholm-to-palma-de-mallorca?flightType=ROUND_TRIP" },
+    { "label": "Lufthansa STO-PMI fare calendar", "url": "https://www.lufthansa.com/lhg/se/en/o-d/cy-cy/stockholm-palma-de-mallorca" },
+    { "label": "FlightsFrom ARN-PMI direct route", "url": "https://www.flightsfrom.com/ARN-PMI" },
+    { "label": "Polar Mallorca 202 Porto Pi", "url": "https://polarmallorca.com/en/rentals/apartment-palma-202-apartamento-en-zona-porto-pi-489340.html" },
+    { "label": "Polar Mallorca 002 Porto Pi", "url": "https://polarmallorca.com/en/rentals/apartment-palma-002-apartamento-en-zona-porto-pi-489356.html" }
   ],
   "history": [
+    {
+      "date": "2026-07-25",
+      "summary": "按浏览器批注修正：月卡按连续 30 天规划，保险按 10 欧/月，不再计每日 3 欧 licence；住宿改为 Arabella 15 公里内优先，并加入两条机票和两条住宿当前推荐；监控频率改为每日，重点追踪住宿、机票和租车好价。"
+    },
     {
       "date": "2026-07-24",
       "summary": "加入中文住宿渠道和公寓选项；确认 Arabella 2026 月卡与 buggy 官方价格；主日期维持 2026-12-04 至 2027-01-05/06。"
