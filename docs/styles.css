@@ -184,6 +184,10 @@ h2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.combo-panel {
+  grid-column: 1 / -1;
+}
+
 .decision-card,
 .route-card,
 .info-panel,
@@ -535,5 +539,9 @@ li + li {
 
   .cost-amount {
     white-space: normal;
+  }
+
+  .combo-panel {
+    grid-column: auto;
   }
 }

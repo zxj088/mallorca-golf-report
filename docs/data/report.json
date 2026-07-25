@@ -7,45 +7,61 @@
     "destination": "Palma de Mallorca (PMI)",
     "travellers": "2 人出行",
     "golfers": "约 8 人打球，不需要团体 tee time",
-    "lodgingNeed": "可自己做饭，可接受公寓式酒店或正规公寓"
+    "lodgingNeed": "可自己做饭，可接受公寓式酒店或正规公寓；住宿总价目标不超过 20,000 SEK"
   },
   "recommendation": {
     "primaryWindow": "2026-12-03/06 至 2027-01-04/07",
     "golfWindow": "2026-12-05 至 2027-01-03",
-    "decision": "按 Arabella Premium Monthly 可覆盖任意连续 30 天处理；先锁 Arabella 20 公里内、可取消、可洗衣做饭的公寓。",
+    "decision": "按 Arabella Premium Monthly 可覆盖任意连续 30 天处理；先找 Arabella 20 公里内、可洗衣做饭、总价不超过 20,000 SEK 的公寓。",
     "confidence": "高，价格仍需下单前复核"
   },
   "currentPicks": {
+    "bestCombos": [
+      {
+        "title": "首选组合：2026-12-05 至 2027-01-04，30 晚",
+        "dates": "周六去程 + 周一回程，优先查 Ryanair / SAS / Norwegian 直飞；正好覆盖 12/05-01/03 打球窗口",
+        "price": "住宿上限 20,000 SEK；机票目标 2 人合计 2,100-4,000 SEK（不含球包/托运行李）",
+        "why": "比 33-35 晚少 3-5 晚，更容易把住宿压进 20,000 SEK；若能订到 Palma 西区 seasonal/monthly rent，这个组合目前最合理。",
+        "url": "https://www.ryanair.com/flights/gb/en/flights-from-stockholm-to-mallorca"
+      },
+      {
+        "title": "备选组合：2026-12-04 至 2027-01-06，33 晚",
+        "dates": "若 Lufthansa / SWISS / Eurowings 或 SAS 在 12/04、01/06 给出好价，再采用这个更从容的窗口",
+        "price": "住宿仍≤20,000 SEK；相当于每晚≤606 SEK，月租房源需控制在约 18,000 SEK/月以内才稳",
+        "why": "日期更舒服，但日租公寓基本会超预算；只适合 Idealista/本地中介的 seasonal rental 或酒店公寓长住特价。",
+        "url": "https://www.lufthansa.com/lhg/se/en/o-d/cy-cy/stockholm-palma-de-mallorca"
+      }
+    ],
     "flights": [
       {
         "title": "稳妥航司方案：Lufthansa / SWISS 一次转机",
         "dates": "去程 2026-12-04 左右，回程 2027-01-05 至 01-07",
-        "price": "Lufthansa 官方 STO-PMI 12 月票价信号约 1,689 SEK/人；Expedia 显示 12/04-12/07 SWISS $175/人、Lufthansa $186/人",
+        "price": "Lufthansa 官方 STO-PMI 12 月票价信号约 1,689 SEK/人；Expedia 短程样本折算：SWISS 约 1,690 SEK/人、Lufthansa 约 1,800 SEK/人",
         "why": "适合带托运行李和球包，转机航司规则通常比廉航更清楚；用 12/04 作为主搜索日，回程在 01/04-01/07 之间比价。",
         "url": "https://www.lufthansa.com/lhg/se/en/o-d/cy-cy/stockholm-palma-de-mallorca"
       },
       {
         "title": "直飞低成本方案：Norwegian / SAS / Ryanair",
         "dates": "去程 2026-12-03 至 12-06，回程 2027-01-04 至 01-07",
-        "price": "KAYAK 当前 ARN-PMI 往返低价信号 $109 起，典型区间 $146-$327；FlightsFrom 显示 ARN-PMI 12 月直飞往返均价约 $128",
+        "price": "KAYAK 当前 ARN-PMI 往返低价信号约 1,055 SEK 起，典型区间约 1,410-3,160 SEK；FlightsFrom 12 月直飞均价约 1,240 SEK",
         "why": "直飞 3 小时 45-50 分钟最省时间；买前必须把球包、座位、托运行李和付款手续费加总后再比较。",
         "url": "https://www.kayak.com/flight-routes/Stockholm-Arlanda-ARN/Palma-de-Mallorca-Son-Sant-Joan-PMI"
       }
     ],
     "lodging": [
       {
-        "title": "Polar Mallorca 202 - Porto Pi / Bonanova",
-        "distance": "Son Quint 7.5 km；Son Muntaner / Son Vida 8.5 km",
-        "price": "2026-10-01 至 12-31 官网价 from €700/周；33 晚按周价估算约 €3,365（含 €65 清洁费，1 月 1-6 日需询价确认）",
-        "why": "46 m²，一卧双床，独立厨房，洗衣机，靠近 Porto Pi 超市和环路；最贴合 2 人长住打球。",
-        "url": "https://polarmallorca.com/en/rentals/apartment-palma-202-apartamento-en-zona-porto-pi-489340.html"
+        "title": "Palma / Cort 月租候选 - Idealista",
+        "distance": "Palma 市中心通常在 Arabella 主球场 20 公里内，逐套用地图复核",
+        "price": "当前搜索结果低价约 12,200 SEK/月；33 晚按比例约 13,400 SEK，低于 20,000 SEK（押金、水电、平台费另核）",
+        "why": "预算最贴合的新方向：找 seasonal / monthly rent，而不是按日酒店价；必须确认可签 2026-12-04 至 2027-01-06 左右的短租合同。",
+        "url": "https://www.idealista.com/en/alquiler-viviendas/palma-de-mallorca-balears-illes/con-pisos%2Calquiler-temporal/?ordenado-por=precios-asc"
       },
       {
-        "title": "Polar Mallorca 002 - Porto Pi / Bonanova",
-        "distance": "Son Quint 7.5 km；Son Muntaner / Son Vida 8.5 km",
-        "price": "2026-10-14 至 12-31 官网价 from €770/周；33 晚按周价估算约 €3,695（含 €65 清洁费，€300 押金另计且可退，1 月 1-6 日需询价确认）",
-        "why": "52 m²，露台，厨房，洗衣机，暖气/空调和 Wi-Fi；同样在 Arabella 主球场 20 公里内。",
-        "url": "https://polarmallorca.com/en/rentals/apartment-palma-002-apartamento-en-zona-porto-pi-489356.html"
+        "title": "Sant Agusti / Cala Major 月租候选 - Idealista",
+        "distance": "Palma 西区，通常比老城更靠近 Son Vida / Son Quint，逐套控制在 20 公里内",
+        "price": "当前搜索结果约 16,600 SEK/月；33 晚按比例约 18,200 SEK，低于 20,000 SEK（清洁费/中介费可能使其超预算）",
+        "why": "比 Porto Pi 日租公寓便宜很多，同时保留厨房、洗衣、停车可能性；优先筛选 furnished + temporary rental + washing machine。",
+        "url": "https://www.idealista.com/en/alquiler-viviendas/palma-de-mallorca-balears-illes/con-pisos%2Calquiler-temporal/?ordenado-por=precios-asc"
       }
     ]
   },
@@ -63,18 +79,25 @@
     {
       "level": "medium",
       "title": "住宿优先 Arabella 球场 20 公里内",
-      "detail": "优先 Bonanova / Porto Pi / Son Vida / Genova / Cala Major / Cas Catala / Palma 西区；Palmanova、Son Caliu 可作为备选，Santa Ponsa 距离偏远。公寓优先，因为能洗衣、做饭和长住。"
+      "detail": "住宿总价上限改为 20,000 SEK，优先 Bonanova / Porto Pi / Son Vida / Genova / Cala Major / Cas Catala / Palma 西区；Palmanova、Son Caliu 可作为备选。公寓优先，因为能洗衣、做饭和长住。"
+    },
+    {
+      "level": "medium",
+      "title": "所有价格统一换算为 SEK",
+      "detail": "页面按 1 EUR≈11.05 SEK、1 USD≈9.67 SEK 做当前折算，实际刷卡汇率、平台手续费和退款汇差需下单前复核。"
     }
   ],
   "costs": [
-    { "item": "Arabella Premium Monthly", "amount": "725 欧/人", "note": "1 月、7 月、8 月、12 月价格" },
-    { "item": "Monthly unlimited buggy", "amount": "195 欧/人", "note": "需确认与月卡同期及雨后限制" },
-    { "item": "Monthly insurance", "amount": "10 欧/人/月", "note": "按你确认的月保险处理，不再计 Daily Golf Licence" },
-    { "item": "2 人月卡+buggy+保险", "amount": "1,860 欧", "note": "按 2 名球员估算：725+195+10 欧/人" },
-    { "item": "Polar Mallorca 202 估算", "amount": "约 3,365 欧/33 晚", "note": "按 €700/周 + €65 清洁费估算，1 月 1-6 日需询价" },
-    { "item": "Polar Mallorca 002 估算", "amount": "约 3,695 欧/33 晚", "note": "按 €770/周 + €65 清洁费估算，押金另计且可退" },
-    { "item": "PMI 长租车 32-33 天", "amount": "900-1,600 欧", "note": "compact estate / compact SUV 级别目标区间" },
-    { "item": "低季旅游税 2 人 32 晚", "amount": "约 22 欧", "note": "3 星 aparthotel 粗算，现场可能另收" }
+    { "item": "汇率口径", "amount": "1 EUR≈11.05 SEK；1 USD≈9.67 SEK", "note": "2026-07-25 页面折算口径，实际支付以平台/银行卡为准" },
+    { "item": "住宿总价上限", "amount": "≤20,000 SEK", "note": "按 33 晚约 ≤606 SEK/晚；清洁费、平台费、水电费计入后仍需低于上限" },
+    { "item": "Arabella Premium Monthly", "amount": "约 8,000 SEK/人", "note": "1 月、7 月、8 月、12 月价格折算" },
+    { "item": "Monthly unlimited buggy", "amount": "约 2,155 SEK/人", "note": "需确认与月卡同期及雨后限制" },
+    { "item": "Monthly insurance", "amount": "约 110 SEK/人/月", "note": "按你确认的月保险处理，不再计 Daily Golf Licence" },
+    { "item": "2 人月卡+buggy+保险", "amount": "约 20,600 SEK", "note": "按 2 名球员估算：约 10,300 SEK/人" },
+    { "item": "Polar Mallorca 202 估算", "amount": "约 37,200 SEK/33 晚", "note": "超出住宿上限，仅作为近球场价格参考" },
+    { "item": "Polar Mallorca 002 估算", "amount": "约 40,800 SEK/33 晚", "note": "超出住宿上限，押金另计且可退" },
+    { "item": "PMI 长租车 32-33 天", "amount": "约 9,950-17,700 SEK", "note": "compact estate / compact SUV 级别目标区间" },
+    { "item": "低季旅游税 2 人 32 晚", "amount": "约 245 SEK", "note": "3 星 aparthotel 粗算，现场可能另收" }
   ],
   "sections": {
     "flights": [
@@ -83,12 +106,13 @@
       "买票前核对 golf bag 费用、重量上限、是否需提前登记运动器材。"
     ],
     "golf": [
-      "Premium Monthly 12 月/1 月价格为 725 欧/人，buggy monthly 为 195 欧/人。",
-      "按月度会员另付 10 欧/人/月保险处理，不再按 Son Muntaner / Son Vida / Son Quint 的 Daily Golf Licence 3 欧/人/天估算。",
+      "Premium Monthly 12 月/1 月价格约 8,000 SEK/人，buggy monthly 约 2,155 SEK/人。",
+      "按月度会员另付约 110 SEK/人/月保险处理，不再按 Son Muntaner / Son Vida / Son Quint 的 Daily Golf Licence 约 33 SEK/人/天估算。",
       "建议每周 4-5 场，优先 10:00-12:00 tee time。"
     ],
     "lodging": [
       "核心筛选：Arabella Golf Mallorca 的 Son Quint / Son Muntaner / Son Vida 20 公里范围内。",
+      "住宿总价上限为 20,000 SEK，按 33 晚约等于 606 SEK/晚；超出即降级为参考，不作为推荐。",
       "优先正规公寓或 serviced apartment：厨房、洗衣机、暖气、停车和 Wi-Fi 比酒店早餐更重要。",
       "首选区域：Bonanova、Porto Pi、Son Vida、Genova、Cala Major、Cas Catala、Palma 西区。",
       "INN Mallorca / Palmanova 作为熟悉备选；若价格明显便宜可保留，但距离 Arabella 不如 Porto Pi / Bonanova。"
@@ -105,9 +129,14 @@
     "adults": 2,
     "rooms": 1,
     "primaryArea": "Arabella Golf 20 km: Bonanova / Porto Pi / Son Vida / Genova / Cala Major",
-    "note": "主按钮只保留能稳定带入日期/人数或直达具体房源的链接；携程、去哪儿、飞猪目前搜索参数不稳定，作为手动复核渠道。"
+    "note": "住宿总价目标不超过 20,000 SEK；主按钮优先保留能稳定带入日期/人数或直达预算相关搜索的链接。携程、去哪儿、飞猪目前搜索参数不稳定，作为手动复核渠道。"
   },
   "lodgingChannels": [
+    {
+      "label": "Idealista 月租",
+      "url": "https://www.idealista.com/en/alquiler-viviendas/palma-de-mallorca-balears-illes/con-pisos%2Calquiler-temporal/?ordenado-por=precios-asc",
+      "note": "Palma seasonal rental，目标≤20,000 SEK"
+    },
     {
       "label": "Booking",
       "url": "https://www.booking.com/searchresults.html?ss=Porto%20Pi%2C%20Palma%20de%20Mallorca%2C%20Spain&checkin=2026-12-04&checkout=2027-01-06&group_adults=2&no_rooms=1&group_children=0&nflt=ht_id%3D201%3Bht_id%3D220",
@@ -136,12 +165,12 @@
     {
       "label": "Polar 202",
       "url": "https://polarmallorca.com/en/rentals/apartment-palma-202-apartamento-en-zona-porto-pi-489340.html",
-      "note": "具体推荐，官网房源页"
+      "note": "超预算参考，约 37,200 SEK"
     },
     {
       "label": "Polar 002",
       "url": "https://polarmallorca.com/en/rentals/apartment-palma-002-apartamento-en-zona-porto-pi-489356.html",
-      "note": "具体推荐，官网房源页"
+      "note": "超预算参考，约 40,800 SEK"
     },
     {
       "label": "INN 官网",
@@ -151,10 +180,10 @@
   ],
   "questions": [
     "向 Arabella 书面复核：Premium Monthly 是否明确按任意连续 30 天开卡？",
-    "向 Arabella 书面复核：10 欧/月保险是否覆盖三座主球场且无需 Daily Golf Licence？",
+    "向 Arabella 书面复核：约 110 SEK/月保险是否覆盖三座主球场且无需 Daily Golf Licence？",
     "Unlimited buggy monthly 是否跨月，雨后是否只能 cart path only？",
-    "住宿是否在 Son Quint / Son Muntaner / Son Vida 20 公里内，是否有洗衣机？",
-    "停车、暖气、洗衣、Wi-Fi、清洁费、押金、旅游税是否已包含？"
+    "住宿是否在 Son Quint / Son Muntaner / Son Vida 20 公里内，且总价是否不超过 20,000 SEK？",
+    "停车、暖气、洗衣、Wi-Fi、清洁费、押金、旅游税是否已包含或另收？"
   ],
   "sources": [
     { "label": "Arabella Golf Mallorca Members 2026", "url": "https://arabellagolfmallorca.com/en/members/" },
@@ -172,12 +201,15 @@
     { "label": "Lufthansa STO-PMI fare calendar", "url": "https://www.lufthansa.com/lhg/se/en/o-d/cy-cy/stockholm-palma-de-mallorca" },
     { "label": "FlightsFrom ARN-PMI direct route", "url": "https://www.flightsfrom.com/ARN-PMI" },
     { "label": "Polar Mallorca 202 Porto Pi", "url": "https://polarmallorca.com/en/rentals/apartment-palma-202-apartamento-en-zona-porto-pi-489340.html" },
-    { "label": "Polar Mallorca 002 Porto Pi", "url": "https://polarmallorca.com/en/rentals/apartment-palma-002-apartamento-en-zona-porto-pi-489356.html" }
+    { "label": "Polar Mallorca 002 Porto Pi", "url": "https://polarmallorca.com/en/rentals/apartment-palma-002-apartamento-en-zona-porto-pi-489356.html" },
+    { "label": "XE EUR-SEK exchange rate", "url": "https://www.xe.com/en-us/currencyconverter/convert/?Amount=1&From=EUR&To=SEK" },
+    { "label": "Investing.com USD-SEK exchange rate", "url": "https://in.investing.com/currencies/usd-sek" },
+    { "label": "Idealista Palma seasonal rentals", "url": "https://www.idealista.com/en/alquiler-viviendas/palma-de-mallorca-balears-illes/con-pisos%2Calquiler-temporal/?ordenado-por=precios-asc" }
   ],
   "history": [
     {
       "date": "2026-07-25",
-      "summary": "按浏览器批注修正：月卡按连续 30 天规划，保险按 10 欧/月，不再计每日 3 欧 licence；住宿改为 Arabella 20 公里内优先，并加入两条机票和两条住宿当前推荐；监控频率改为每日，重点追踪住宿、机票和租车好价。"
+      "summary": "按浏览器批注修正：月卡按连续 30 天规划，保险按约 110 SEK/月，不再计每日约 33 SEK licence；住宿改为 Arabella 20 公里内且总价不超过 20,000 SEK；监控频率改为每日，重点追踪住宿、机票和租车好价。"
     },
     {
       "date": "2026-07-24",

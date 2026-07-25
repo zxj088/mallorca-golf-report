@@ -48,6 +48,7 @@ function renderReport(report) {
   renderList("#golf", report.sections.golf);
   renderList("#lodging", report.sections.lodging);
   renderList("#car", report.sections.car);
+  renderPickCards("#combo-picks", report.currentPicks.bestCombos);
   renderPickCards("#flight-picks", report.currentPicks.flights);
   renderPickCards("#lodging-picks", report.currentPicks.lodging);
 
@@ -104,7 +105,7 @@ function renderReport(report) {
     .join("");
 }
 
-fetch("./data/report.json?v=20260725-radius20")
+fetch("./data/report.json?v=20260725-sek-combos")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Report data failed to load");
