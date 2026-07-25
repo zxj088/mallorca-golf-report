@@ -12,7 +12,7 @@
   "recommendation": {
     "primaryWindow": "2026-12-03/06 至 2027-01-04/07",
     "golfWindow": "2026-12-05 至 2027-01-03",
-    "decision": "按 Arabella Premium Monthly 可覆盖任意连续 30 天处理；先锁 Arabella 15 公里内、可取消、可洗衣做饭的公寓。",
+    "decision": "按 Arabella Premium Monthly 可覆盖任意连续 30 天处理；先锁 Arabella 20 公里内、可取消、可洗衣做饭的公寓。",
     "confidence": "高，价格仍需下单前复核"
   },
   "currentPicks": {
@@ -44,7 +44,7 @@
         "title": "Polar Mallorca 002 - Porto Pi / Bonanova",
         "distance": "Son Quint 7.5 km；Son Muntaner / Son Vida 8.5 km",
         "price": "2026-10-14 至 12-31 官网价 from €770/周；33 晚按周价估算约 €3,695（含 €65 清洁费，€300 押金另计且可退，1 月 1-6 日需询价确认）",
-        "why": "52 m²，露台，厨房，洗衣机，暖气/空调和 Wi-Fi；同样在 Arabella 主球场 15 公里内。",
+        "why": "52 m²，露台，厨房，洗衣机，暖气/空调和 Wi-Fi；同样在 Arabella 主球场 20 公里内。",
         "url": "https://polarmallorca.com/en/rentals/apartment-palma-002-apartamento-en-zona-porto-pi-489356.html"
       }
     ]
@@ -62,7 +62,7 @@
     },
     {
       "level": "medium",
-      "title": "住宿优先 Arabella 球场 15 公里内",
+      "title": "住宿优先 Arabella 球场 20 公里内",
       "detail": "优先 Bonanova / Porto Pi / Son Vida / Genova / Cala Major / Cas Catala / Palma 西区；Palmanova、Son Caliu 可作为备选，Santa Ponsa 距离偏远。公寓优先，因为能洗衣、做饭和长住。"
     }
   ],
@@ -88,7 +88,7 @@
       "建议每周 4-5 场，优先 10:00-12:00 tee time。"
     ],
     "lodging": [
-      "核心筛选：Arabella Golf Mallorca 的 Son Quint / Son Muntaner / Son Vida 15 公里范围内。",
+      "核心筛选：Arabella Golf Mallorca 的 Son Quint / Son Muntaner / Son Vida 20 公里范围内。",
       "优先正规公寓或 serviced apartment：厨房、洗衣机、暖气、停车和 Wi-Fi 比酒店早餐更重要。",
       "首选区域：Bonanova、Porto Pi、Son Vida、Genova、Cala Major、Cas Catala、Palma 西区。",
       "INN Mallorca / Palmanova 作为熟悉备选；若价格明显便宜可保留，但距离 Arabella 不如 Porto Pi / Bonanova。"
@@ -104,7 +104,7 @@
     "checkOut": "2027-01-06",
     "adults": 2,
     "rooms": 1,
-    "primaryArea": "Arabella Golf 15 km: Bonanova / Porto Pi / Son Vida / Genova / Cala Major",
+    "primaryArea": "Arabella Golf 20 km: Bonanova / Porto Pi / Son Vida / Genova / Cala Major",
     "note": "主按钮只保留能稳定带入日期/人数或直达具体房源的链接；携程、去哪儿、飞猪目前搜索参数不稳定，作为手动复核渠道。"
   },
   "lodgingChannels": [
@@ -153,7 +153,7 @@
     "向 Arabella 书面复核：Premium Monthly 是否明确按任意连续 30 天开卡？",
     "向 Arabella 书面复核：10 欧/月保险是否覆盖三座主球场且无需 Daily Golf Licence？",
     "Unlimited buggy monthly 是否跨月，雨后是否只能 cart path only？",
-    "住宿是否在 Son Quint / Son Muntaner / Son Vida 15 公里内，是否有洗衣机？",
+    "住宿是否在 Son Quint / Son Muntaner / Son Vida 20 公里内，是否有洗衣机？",
     "停车、暖气、洗衣、Wi-Fi、清洁费、押金、旅游税是否已包含？"
   ],
   "sources": [
@@ -177,7 +177,7 @@
   "history": [
     {
       "date": "2026-07-25",
-      "summary": "按浏览器批注修正：月卡按连续 30 天规划，保险按 10 欧/月，不再计每日 3 欧 licence；住宿改为 Arabella 15 公里内优先，并加入两条机票和两条住宿当前推荐；监控频率改为每日，重点追踪住宿、机票和租车好价。"
+      "summary": "按浏览器批注修正：月卡按连续 30 天规划，保险按 10 欧/月，不再计每日 3 欧 licence；住宿改为 Arabella 20 公里内优先，并加入两条机票和两条住宿当前推荐；监控频率改为每日，重点追踪住宿、机票和租车好价。"
     },
     {
       "date": "2026-07-24",
