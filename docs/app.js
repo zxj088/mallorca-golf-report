@@ -104,7 +104,7 @@ function renderReport(report) {
     .join("");
 }
 
-fetch("./data/report.json?v=20260725-recs")
+fetch("./data/report.json?v=20260725-radius20")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Report data failed to load");
