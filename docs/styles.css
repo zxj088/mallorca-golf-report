@@ -127,8 +127,8 @@ a:hover {
   border: 1px solid rgba(255, 255, 255, 0.75);
   background:
     linear-gradient(rgba(18, 63, 50, 0.72), rgba(18, 63, 50, 0.55)),
-    url("./son-muntaner.jpg");
-  background-position: center 54%;
+    url("./home-course.png");
+  background-position: center 44%;
   background-size: cover;
   box-shadow: var(--shadow);
   border-radius: 26px;
