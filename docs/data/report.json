@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-25",
+  "lastUpdated": "2026-07-30",
   "nextReview": "每天自动检查好价",
   "trip": {
     "title": "马略卡高尔夫月住计划",
@@ -50,11 +50,11 @@
     ],
     "lodging": [
       {
-        "title": "Palma / Cort 月租候选 - Idealista",
-        "distance": "Palma 市中心通常在 Arabella 主球场 20 公里内，逐套用地图复核",
-        "price": "当前搜索结果低价约 12,200 SEK/月；33 晚按比例约 13,400 SEK，低于 20,000 SEK（押金、水电、平台费另核）",
-        "why": "预算最贴合的新方向：找 seasonal / monthly rent，而不是按日酒店价；必须确认可签 2026-12-04 至 2027-01-06 左右的短租合同。",
-        "url": "https://www.idealista.com/en/alquiler-viviendas/palma-de-mallorca-balears-illes/con-pisos%2Calquiler-temporal/?ordenado-por=precios-asc"
+        "title": "Airbnb 当前首选：Estudio Robert 1º",
+        "distance": "Palma 公寓；是否在 Arabella 20 公里内及停车位置需打开房源地图复核",
+        "price": "2026-07-30 页面显示约 19,393 SEK/月，原价约 22,169 SEK；月租折扣、免费取消",
+        "why": "已按洗衣机、厨房、免费停车、暖气筛选；评分 4.88（128 条评价），当前最接近 20,000 SEK 总预算上限。",
+        "url": "https://zh.airbnb.com/rooms/24932587?adults=2&check_in=2026-12-04&check_out=2027-01-06"
       },
       {
         "title": "Sant Agusti / Cala Major 月租候选 - Idealista",
@@ -64,6 +64,15 @@
         "url": "https://www.idealista.com/en/alquiler-viviendas/palma-de-mallorca-balears-illes/con-pisos%2Calquiler-temporal/?ordenado-por=precios-asc"
       }
     ]
+  },
+  "airbnbSpotlight": {
+    "summary": "重点搜索 Airbnb：2026-12-04 至 2027-01-06，2 位成人，并筛选洗衣机、厨房、免费停车和暖气。",
+    "name": "Estudio Robert 1º",
+    "details": "1 间卧室 · 1 张双人床 · 1.5 个卫生间 · 评分 4.88（128 条评价）· 月租折扣 · 免费取消",
+    "price": "当前页面显示约 19,393 SEK/月",
+    "caution": "接近 20,000 SEK 上限；预订前需确认 33 晚最终总价、准确停车位置，以及到 Arabella 三座主球场的距离。",
+    "listingUrl": "https://zh.airbnb.com/rooms/24932587?adults=2&check_in=2026-12-04&check_out=2027-01-06",
+    "searchUrl": "https://zh.airbnb.com/s/Porto-Pi--Palma--Spain/homes?checkin=2026-12-04&checkout=2027-01-06&adults=2&query=Porto%20Pi%2C%20Palma%2C%20Spain&amenities%5B%5D=33&amenities%5B%5D=8&amenities%5B%5D=9&amenities%5B%5D=30"
   },
   "alerts": [
     {
@@ -133,6 +142,11 @@
   },
   "lodgingChannels": [
     {
+      "label": "Airbnb 重点筛选",
+      "url": "https://zh.airbnb.com/s/Porto-Pi--Palma--Spain/homes?checkin=2026-12-04&checkout=2027-01-06&adults=2&query=Porto%20Pi%2C%20Palma%2C%20Spain&amenities%5B%5D=33&amenities%5B%5D=8&amenities%5B%5D=9&amenities%5B%5D=30",
+      "note": "洗衣机、厨房、免费停车、暖气；目标≤20,000 SEK"
+    },
+    {
       "label": "Idealista 月租",
       "url": "https://www.idealista.com/en/alquiler-viviendas/palma-de-mallorca-balears-illes/con-pisos%2Calquiler-temporal/?ordenado-por=precios-asc",
       "note": "Palma seasonal rental，目标≤20,000 SEK"
@@ -151,11 +165,6 @@
       "label": "Expedia",
       "url": "https://www.expedia.com/Hotel-Search?destination=Porto%20Pi%2C%20Palma%20de%20Mallorca%2C%20Balearic%20Islands%2C%20Spain&startDate=2026-12-04&endDate=2027-01-06&rooms=1&adults=2",
       "note": "Porto Pi，2 成人，1 间/套"
-    },
-    {
-      "label": "Airbnb",
-      "url": "https://www.airbnb.com/s/Porto-Pi--Palma--Spain/homes?checkin=2026-12-04&checkout=2027-01-06&adults=2&query=Porto%20Pi%2C%20Palma%2C%20Spain",
-      "note": "Porto Pi 整套房/公寓"
     },
     {
       "label": "Vrbo",
@@ -204,6 +213,10 @@
     { "label": "Idealista Palma seasonal rentals", "url": "https://www.idealista.com/en/alquiler-viviendas/palma-de-mallorca-balears-illes/con-pisos%2Calquiler-temporal/?ordenado-por=precios-asc" }
   ],
   "history": [
+    {
+      "date": "2026-07-30",
+      "summary": "住宿搜索重点转向 Airbnb；按洗衣机、厨房、免费停车和暖气筛选，并新增自动弹出的 Airbnb 推荐窗口。"
+    },
     {
       "date": "2026-07-25",
       "summary": "按浏览器批注修正：月卡按连续 30 天规划，保险按约 110 SEK/月，不再计每日约 33 SEK licence；住宿改为 Arabella 20 公里内且总价不超过 20,000 SEK；监控频率改为每日，重点追踪住宿、机票和租车好价。"

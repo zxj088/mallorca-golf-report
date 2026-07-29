@@ -195,6 +195,7 @@ h2 {
 }
 
 .hero-actions span,
+.hero-actions button,
 .chips a {
   display: inline-flex;
   min-height: 36px;
@@ -206,9 +207,23 @@ h2 {
   font-size: 0.92rem;
 }
 
-.hero-actions span {
+.hero-actions span,
+.hero-actions button {
   border-radius: 999px;
   backdrop-filter: blur(8px);
+}
+
+.hero-actions button {
+  cursor: pointer;
+  border-color: #f5d08a;
+  background: #f5d08a;
+  color: var(--deep-green);
+  font-family: inherit;
+  font-weight: 850;
+}
+
+.hero-actions button:hover {
+  background: #ffe3a6;
 }
 
 .hero-panel {
@@ -748,6 +763,104 @@ footer p {
 footer a {
   flex: 0 0 auto;
   font-weight: 800;
+}
+
+.recommendation-modal {
+  width: min(620px, calc(100% - 28px));
+  max-height: min(760px, calc(100vh - 40px));
+  border: 0;
+  border-radius: 24px;
+  padding: 28px;
+  background: #fffaf3;
+  color: var(--ink);
+  box-shadow: 0 32px 90px rgba(18, 63, 50, 0.3);
+}
+
+.recommendation-modal::backdrop {
+  background: rgba(9, 25, 20, 0.68);
+  backdrop-filter: blur(6px);
+}
+
+.recommendation-modal h2 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  cursor: pointer;
+  border: 0;
+  border-radius: 50%;
+  background: #e9eee9;
+  color: var(--deep-green);
+  font-size: 1.5rem;
+}
+
+.modal-lead,
+.modal-result p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.modal-result {
+  margin: 20px 0;
+  border: 1px solid #ebc9b2;
+  border-radius: 18px;
+  padding: 20px;
+  background: #fff;
+}
+
+.modal-result h3 {
+  margin: 12px 0 8px;
+  color: var(--lodging);
+  font-size: 1.3rem;
+}
+
+.modal-result strong {
+  display: block;
+  color: var(--deep-green);
+  font-size: 1.35rem;
+}
+
+.modal-badge {
+  display: inline-flex;
+  border-radius: 999px;
+  padding: 6px 10px;
+  background: #f8ebdf;
+  color: var(--lodging);
+  font-size: 0.78rem;
+  font-weight: 850;
+}
+
+.modal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.modal-actions a {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  border: 1px solid rgba(181, 107, 47, 0.35);
+  border-radius: 999px;
+  padding: 9px 15px;
+  font-weight: 850;
+}
+
+.modal-actions a:hover {
+  text-decoration: none;
+}
+
+.modal-actions .modal-primary {
+  background: var(--lodging);
+  color: #fff;
 }
 
 @media (max-width: 980px) {
