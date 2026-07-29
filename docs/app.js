@@ -115,9 +115,31 @@ function renderReport(report) {
         `<a href="${encodeURI(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)} ↗</a>`,
     )
     .join("");
+
+  const airbnb = report.airbnbSpotlight;
+  if (airbnb) {
+    $("#airbnb-modal-summary").textContent = airbnb.summary;
+    $("#airbnb-modal-name").textContent = airbnb.name;
+    $("#airbnb-modal-details").textContent = airbnb.details;
+    $("#airbnb-modal-price").textContent = airbnb.price;
+    $("#airbnb-modal-caution").textContent = airbnb.caution;
+    $("#airbnb-modal-listing").href = airbnb.listingUrl;
+    $("#airbnb-modal-search").href = airbnb.searchUrl;
+
+    const modal = $("#airbnb-modal");
+    const openModal = () => {
+      if (!modal.open) modal.showModal();
+    };
+    $("#open-airbnb-modal").addEventListener("click", openModal);
+    $(".modal-close").addEventListener("click", () => modal.close());
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) modal.close();
+    });
+    openModal();
+  }
 }
 
-fetch("./data/report.json?v=20260725-folds")
+fetch("./data/report.json?v=20260730-airbnb")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Report data failed to load");

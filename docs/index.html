@@ -39,6 +39,7 @@
           <div class="hero-actions" aria-label="主要状态">
             <span id="last-updated">更新中</span>
             <span id="next-review">每日更新</span>
+            <button id="open-airbnb-modal" type="button">查看 Airbnb 推荐</button>
           </div>
         </div>
         <div class="hero-panel" aria-label="推荐窗口">
@@ -195,10 +196,27 @@
         <div id="sources" class="sources"></div>
       </details>
     </main>
+    <dialog id="airbnb-modal" class="recommendation-modal" aria-labelledby="airbnb-modal-title">
+      <button class="modal-close" type="button" aria-label="关闭推荐窗口">×</button>
+      <p class="eyebrow">Airbnb Spotlight</p>
+      <h2 id="airbnb-modal-title">Airbnb 当前推荐</h2>
+      <p class="modal-lead" id="airbnb-modal-summary"></p>
+      <div class="modal-result">
+        <span class="modal-badge">当前最接近预算</span>
+        <h3 id="airbnb-modal-name"></h3>
+        <p id="airbnb-modal-details"></p>
+        <strong id="airbnb-modal-price"></strong>
+        <p id="airbnb-modal-caution"></p>
+      </div>
+      <div class="modal-actions">
+        <a id="airbnb-modal-listing" class="modal-primary" target="_blank" rel="noopener noreferrer">查看房源</a>
+        <a id="airbnb-modal-search" target="_blank" rel="noopener noreferrer">查看全部筛选结果</a>
+      </div>
+    </dialog>
     <footer>
       <p>这是一份持续更新的决策看板。价格与规则请在预订前向服务商复核。</p>
       <a href="#top">返回顶部 ↑</a>
     </footer>
-    <script src="./app.js?v=20260725-folds"></script>
+    <script src="./app.js?v=20260730-airbnb"></script>
   </body>
 </html>
