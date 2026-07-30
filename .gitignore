@@ -1,3 +1,7 @@
 /.agents/
 /scripts/local-preview.mjs
 /2026-07-24_马略卡高尔夫月住更新报告.md
+/node_modules/
+/dist/
+/.wrangler/
+/site-build.tar.gz
