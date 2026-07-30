@@ -74,6 +74,36 @@
     "listingUrl": "https://zh.airbnb.com/rooms/24932587?adults=2&check_in=2026-12-04&check_out=2027-01-06",
     "searchUrl": "https://zh.airbnb.com/s/Porto-Pi--Palma--Spain/homes?checkin=2026-12-04&checkout=2027-01-06&adults=2&query=Porto%20Pi%2C%20Palma%2C%20Spain&amenities%5B%5D=33&amenities%5B%5D=8&amenities%5B%5D=9&amenities%5B%5D=30"
   },
+  "dailyDiff": {
+    "previousDate": "2026-07-25",
+    "currentDate": "2026-07-30",
+    "note": "未找到 2026-07-29 的自动更新快照，因此本次与最近一次有效快照比较。",
+    "items": [
+      "住宿搜索重点转向 Airbnb，并加入洗衣机、厨房、免费停车和暖气筛选。",
+      "新增 Airbnb 推荐弹窗，当前首选为 Estudio Robert 1º，页面价格约 19,393 SEK/月。",
+      "住宿候选新增人工核实与删除状态；状态保存在当前浏览器。"
+    ]
+  },
+  "lodgingCandidates": [
+    {
+      "id": "airbnb-24932587-20260730",
+      "addedDate": "2026-07-30",
+      "source": "Airbnb",
+      "title": "Estudio Robert 1º",
+      "price": "约 19,393 SEK/月",
+      "note": "厨房、洗衣机、暖气、免费停车；评分 4.88（128 条评价）。需复核 33 晚最终总价和到 Arabella 的距离。",
+      "url": "https://zh.airbnb.com/rooms/24932587?adults=2&check_in=2026-12-04&check_out=2027-01-06"
+    },
+    {
+      "id": "idealista-sant-agusti-20260725",
+      "addedDate": "2026-07-25",
+      "source": "Idealista",
+      "title": "Sant Agusti / Cala Major 月租候选",
+      "price": "约 18,200 SEK / 33 晚估算",
+      "note": "预算内参考；需逐套复核停车、短租合同、清洁费及准确位置。",
+      "url": "https://www.idealista.com/en/alquiler-viviendas/palma-de-mallorca-balears-illes/con-pisos%2Calquiler-temporal/?ordenado-por=precios-asc"
+    }
+  ],
   "alerts": [
     {
       "level": "high",
