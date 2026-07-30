@@ -33,6 +33,78 @@ function renderPickCards(id, picks) {
     .join("");
 }
 
+const candidateStateKey = "mallorca-lodging-candidate-states-v1";
+
+function readCandidateStates() {
+  try {
+    return JSON.parse(localStorage.getItem(candidateStateKey) || "{}");
+  } catch {
+    return {};
+  }
+}
+
+function updateCandidateState(candidateId, action) {
+  const code = window.prompt("请输入确认码");
+  if (code !== "56") {
+    window.alert("确认码不正确，未执行操作。");
+    return;
+  }
+
+  const states = readCandidateStates();
+  states[candidateId] = action;
+  localStorage.setItem(candidateStateKey, JSON.stringify(states));
+  applyCandidateStates();
+}
+
+function applyCandidateStates() {
+  const states = readCandidateStates();
+  document.querySelectorAll("[data-candidate-id]").forEach((card) => {
+    const state = states[card.dataset.candidateId] || "";
+    card.classList.toggle("is-verified", state === "verified");
+    card.classList.toggle("is-deleted", state === "deleted");
+    card.querySelectorAll("button").forEach((button) => {
+      button.setAttribute(
+        "aria-pressed",
+        String(button.dataset.action === state),
+      );
+    });
+  });
+}
+
+function renderLodgingCandidates(candidates) {
+  const node = $("#lodging-candidates");
+  node.innerHTML = candidates
+    .map(
+      (candidate) => `
+        <article class="candidate-card" data-candidate-id="${escapeHtml(candidate.id)}">
+          <div class="candidate-copy">
+            <div class="candidate-meta">
+              <span>${escapeHtml(candidate.addedDate)}</span>
+              <span>${escapeHtml(candidate.source)}</span>
+            </div>
+            <h3>${escapeHtml(candidate.title)}</h3>
+            <strong>${escapeHtml(candidate.price)}</strong>
+            <p>${escapeHtml(candidate.note)}</p>
+            <a href="${encodeURI(candidate.url)}" target="_blank" rel="noopener noreferrer">查看房源 ↗</a>
+          </div>
+          <div class="candidate-actions" aria-label="${escapeHtml(candidate.title)}操作">
+            <button type="button" data-action="verified">已核实</button>
+            <button type="button" data-action="deleted">删除</button>
+          </div>
+        </article>
+      `,
+    )
+    .join("");
+
+  node.addEventListener("click", (event) => {
+    const button = event.target.closest("button[data-action]");
+    if (!button) return;
+    const card = button.closest("[data-candidate-id]");
+    updateCandidateState(card.dataset.candidateId, button.dataset.action);
+  });
+  applyCandidateStates();
+}
+
 function renderReport(report) {
   $("#last-updated").textContent = `更新：${report.lastUpdated}`;
   $("#next-review").textContent = report.nextReview;
@@ -116,6 +188,14 @@ function renderReport(report) {
     )
     .join("");
 
+  renderLodgingCandidates(report.lodgingCandidates || []);
+  const diff = report.dailyDiff;
+  if (diff) {
+    $("#diff-period").textContent =
+      `${diff.previousDate} → ${diff.currentDate}。${diff.note || ""}`;
+    renderList("#daily-diff", diff.items || []);
+  }
+
   const airbnb = report.airbnbSpotlight;
   if (airbnb) {
     $("#airbnb-modal-summary").textContent = airbnb.summary;
@@ -139,7 +219,7 @@ function renderReport(report) {
   }
 }
 
-fetch("./data/report.json?v=20260730-airbnb")
+fetch("./data/report.json?v=20260730-candidates")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Report data failed to load");

@@ -146,6 +146,24 @@
         </div>
       </section>
 
+      <section class="candidate-section">
+        <div class="section-heading">
+          <p class="eyebrow">Daily Lodging Candidates</p>
+          <h2>每日候选住宿</h2>
+          <p class="section-note">状态只保存在当前浏览器。点击操作后输入确认码。</p>
+        </div>
+        <div id="lodging-candidates" class="candidate-list"></div>
+      </section>
+
+      <section class="diff-section">
+        <div class="section-heading compact">
+          <p class="eyebrow">Daily Changes</p>
+          <h2>与前一天的差异</h2>
+        </div>
+        <p id="diff-period" class="section-note"></p>
+        <ul id="daily-diff" class="diff-list"></ul>
+      </section>
+
       <section class="split-section" id="budget">
         <details class="table-panel">
           <summary class="section-heading compact fold-heading">
@@ -217,6 +235,6 @@
       <p>这是一份持续更新的决策看板。价格与规则请在预订前向服务商复核。</p>
       <a href="#top">返回顶部 ↑</a>
     </footer>
-    <script src="./app.js?v=20260730-airbnb"></script>
+    <script src="./app.js?v=20260730-candidates"></script>
   </body>
 </html>

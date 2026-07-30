@@ -323,6 +323,8 @@ h2 {
 .pick-panel,
 .table-panel,
 .channel-panel,
+.candidate-section,
+.diff-section,
 .timeline-section,
 .sources-section {
   border: 1px solid var(--line);
@@ -337,9 +339,129 @@ h2 {
 .pick-panel,
 .table-panel,
 .channel-panel,
+.candidate-section,
+.diff-section,
 .timeline-section,
 .sources-section {
   padding: 22px;
+}
+
+.section-note {
+  margin: 8px 0 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.candidate-section,
+.diff-section {
+  margin-top: 18px;
+}
+
+.candidate-list {
+  display: grid;
+  gap: 12px;
+}
+
+.candidate-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--lodging);
+  border-radius: 14px;
+  padding: 16px;
+  background: #fff;
+}
+
+.candidate-copy h3 {
+  margin: 8px 0;
+  color: var(--lodging);
+}
+
+.candidate-copy strong {
+  color: var(--deep-green);
+}
+
+.candidate-copy p {
+  margin: 8px 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.candidate-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.candidate-meta span {
+  border-radius: 999px;
+  padding: 4px 8px;
+  background: #f8ebdf;
+  color: var(--lodging);
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.candidate-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.candidate-actions button {
+  min-width: 76px;
+  cursor: pointer;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 12px;
+  background: #fff;
+  color: var(--ink);
+  font-family: inherit;
+  font-weight: 800;
+}
+
+.candidate-actions button[data-action="verified"]:hover {
+  border-color: var(--green);
+  color: var(--green);
+}
+
+.candidate-actions button[data-action="deleted"]:hover {
+  border-color: var(--rose);
+  color: var(--rose);
+}
+
+.candidate-card.is-verified .candidate-copy {
+  color: var(--green);
+}
+
+.candidate-card.is-verified .candidate-copy h3,
+.candidate-card.is-verified .candidate-copy strong,
+.candidate-card.is-verified .candidate-copy p,
+.candidate-card.is-verified .candidate-copy a {
+  color: var(--green);
+}
+
+.candidate-card.is-verified button[data-action="verified"] {
+  border-color: var(--green);
+  background: #e7f2ec;
+  color: var(--green);
+}
+
+.candidate-card.is-deleted .candidate-copy {
+  opacity: 0.62;
+  text-decoration: line-through;
+}
+
+.candidate-card.is-deleted button[data-action="deleted"] {
+  border-color: var(--rose);
+  background: #f8e9e6;
+  color: var(--rose);
+}
+
+.diff-list {
+  margin-top: 14px;
 }
 
 .decision-main h2 {
@@ -915,6 +1037,8 @@ footer a {
   .pick-panel,
   .table-panel,
   .channel-panel,
+  .candidate-section,
+  .diff-section,
   .timeline-section,
   .sources-section {
     padding: 18px;
@@ -944,6 +1068,14 @@ footer a {
     width: min(100% - 20px, 1180px);
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .candidate-card {
+    grid-template-columns: 1fr;
+  }
+
+  .candidate-actions {
+    flex-direction: row;
   }
 }
 
