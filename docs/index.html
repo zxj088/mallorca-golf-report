@@ -49,11 +49,13 @@
         </div>
       </section>
 
-      <section class="quick-stats" aria-label="计划概览">
-        <article><span>行程</span><strong>30–33 晚</strong></article>
-        <article><span>住宿上限</span><strong>20,000 SEK</strong></article>
-        <article><span>高尔夫范围</span><strong>Arabella 20 km</strong></article>
-        <article><span>出行人数</span><strong>2 人</strong></article>
+      <section class="diff-section priority-section">
+        <div class="section-heading compact">
+          <p class="eyebrow">Daily Changes</p>
+          <h2>与前一天的差异</h2>
+        </div>
+        <p id="diff-period" class="section-note"></p>
+        <ul id="daily-diff" class="diff-list"></ul>
       </section>
 
       <section class="decision-grid" aria-label="核心决策">
@@ -73,69 +75,12 @@
         </article>
       </section>
 
-      <section>
-        <div class="section-heading">
-          <p class="eyebrow">Watch List</p>
-          <h2>近期重点风险</h2>
-        </div>
-        <div id="alerts" class="alerts"></div>
-      </section>
-
-      <section class="content-grid">
-        <details class="info-panel info-flight">
-          <summary class="panel-head">
-            <span class="icon">✈</span>
-            <h2>航班</h2>
-            <span class="fold-label">展开</span>
-          </summary>
-          <ul id="flights"></ul>
-        </details>
-        <details class="info-panel info-golf">
-          <summary class="panel-head">
-            <span class="icon">⛳</span>
-            <h2>高尔夫</h2>
-            <span class="fold-label">展开</span>
-          </summary>
-          <ul id="golf"></ul>
-        </details>
-        <details class="info-panel info-lodging">
-          <summary class="panel-head">
-            <span class="icon">⌂</span>
-            <h2>住宿</h2>
-            <span class="fold-label">展开</span>
-          </summary>
-          <ul id="lodging"></ul>
-        </details>
-        <details class="info-panel info-car">
-          <summary class="panel-head">
-            <span class="icon">▣</span>
-            <h2>租车</h2>
-            <span class="fold-label">展开</span>
-          </summary>
-          <ul id="car"></ul>
-        </details>
-      </section>
-
       <section class="picks-section" id="recommendations">
         <div class="section-heading">
           <p class="eyebrow">Current Picks</p>
-          <h2>当前具体推荐</h2>
+          <h2>当前住宿推荐</h2>
         </div>
-        <div class="picks-grid">
-          <article class="pick-panel combo-panel pick-combo">
-            <div class="section-heading compact">
-              <p class="eyebrow">Best Combo</p>
-              <h2>机票住宿组合</h2>
-            </div>
-            <div id="combo-picks" class="pick-list"></div>
-          </article>
-          <article class="pick-panel pick-flight">
-            <div class="section-heading compact">
-              <p class="eyebrow">Flights</p>
-              <h2>机票两选</h2>
-            </div>
-            <div id="flight-picks" class="pick-list"></div>
-          </article>
+        <div class="picks-grid lodging-first">
           <article class="pick-panel pick-lodging">
             <div class="section-heading compact">
               <p class="eyebrow">Lodging</p>
@@ -150,18 +95,71 @@
         <div class="section-heading">
           <p class="eyebrow">Daily Lodging Candidates</p>
           <h2>每日候选住宿</h2>
-          <p class="section-note">状态会同步到所有设备。点击操作后输入确认码。</p>
         </div>
         <div id="lodging-candidates" class="candidate-list"></div>
       </section>
 
-      <section class="diff-section">
-        <div class="section-heading compact">
-          <p class="eyebrow">Daily Changes</p>
-          <h2>与前一天的差异</h2>
+      <section class="secondary-section">
+        <div class="section-heading">
+          <p class="eyebrow">More Details</p>
+          <h2>行程与其他资料</h2>
         </div>
-        <p id="diff-period" class="section-note"></p>
-        <ul id="daily-diff" class="diff-list"></ul>
+
+        <details class="table-panel quick-stats-fold">
+          <summary class="section-heading compact fold-heading">
+            <span><span class="eyebrow">Trip Settings</span><strong>行程设定</strong></span>
+            <span class="fold-label">展开</span>
+          </summary>
+          <div class="quick-stats" aria-label="行程设定">
+            <article><span>行程</span><strong>30–33 晚</strong></article>
+            <article><span>住宿上限</span><strong>20,000 SEK</strong></article>
+            <article><span>高尔夫范围</span><strong>Arabella 20 km</strong></article>
+            <article><span>出行人数</span><strong>2 人</strong></article>
+          </div>
+        </details>
+
+        <details class="table-panel watch-fold">
+          <summary class="section-heading compact fold-heading">
+            <span><span class="eyebrow">Watch List</span><strong>近期重点风险</strong></span>
+            <span class="fold-label">展开</span>
+          </summary>
+          <div id="alerts" class="alerts"></div>
+        </details>
+
+        <details class="pick-panel combo-panel pick-combo">
+          <summary class="section-heading compact fold-heading">
+            <span><span class="eyebrow">Best Combo</span><strong>机票住宿组合</strong></span>
+            <span class="fold-label">展开</span>
+          </summary>
+          <div id="combo-picks" class="pick-list"></div>
+        </details>
+
+        <details class="pick-panel pick-flight">
+          <summary class="section-heading compact fold-heading">
+            <span><span class="eyebrow">Flights</span><strong>机票两选</strong></span>
+            <span class="fold-label">展开</span>
+          </summary>
+          <div id="flight-picks" class="pick-list"></div>
+        </details>
+
+        <div class="content-grid">
+          <details class="info-panel info-flight">
+            <summary class="panel-head"><span class="icon">✈</span><h2>航班</h2><span class="fold-label">展开</span></summary>
+            <ul id="flights"></ul>
+          </details>
+          <details class="info-panel info-golf">
+            <summary class="panel-head"><span class="icon">⛳</span><h2>高尔夫</h2><span class="fold-label">展开</span></summary>
+            <ul id="golf"></ul>
+          </details>
+          <details class="info-panel info-lodging">
+            <summary class="panel-head"><span class="icon">⌂</span><h2>住宿条件</h2><span class="fold-label">展开</span></summary>
+            <ul id="lodging"></ul>
+          </details>
+          <details class="info-panel info-car">
+            <summary class="panel-head"><span class="icon">▣</span><h2>租车</h2><span class="fold-label">展开</span></summary>
+            <ul id="car"></ul>
+          </details>
+        </div>
       </section>
 
       <section class="split-section" id="budget">

@@ -276,6 +276,31 @@ h2 {
   margin: 18px 0;
 }
 
+.priority-section {
+  border-left: 5px solid var(--sea);
+}
+
+.lodging-first {
+  grid-template-columns: 1fr;
+}
+
+.secondary-section {
+  margin-top: 34px;
+}
+
+.secondary-section > details {
+  margin-top: 18px;
+}
+
+.quick-stats-fold .quick-stats {
+  margin-bottom: 0;
+}
+
+.watch-fold .alerts,
+.pick-panel > .pick-list {
+  margin-top: 18px;
+}
+
 .quick-stats article {
   display: grid;
   gap: 7px;
