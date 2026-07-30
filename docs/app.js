@@ -33,33 +33,31 @@ function renderPickCards(id, picks) {
     .join("");
 }
 
-const candidateStateKey = "mallorca-lodging-candidate-states-v1";
+let candidateStates = {};
 
-function readCandidateStates() {
-  try {
-    return JSON.parse(localStorage.getItem(candidateStateKey) || "{}");
-  } catch {
-    return {};
-  }
-}
-
-function updateCandidateState(candidateId, action) {
+async function updateCandidateState(candidateId, action) {
   const code = window.prompt("请输入确认码");
   if (code !== "56") {
     window.alert("确认码不正确，未执行操作。");
     return;
   }
 
-  const states = readCandidateStates();
-  states[candidateId] = action;
-  localStorage.setItem(candidateStateKey, JSON.stringify(states));
-  applyCandidateStates();
+  try {
+    const response = await fetch("/api/candidate-states", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ candidateId, action, code }),
+    });
+    if (!response.ok) throw new Error("状态保存失败");
+    await refreshCandidateStates();
+  } catch {
+    window.alert("状态暂时无法同步，请稍后重试。");
+  }
 }
 
 function applyCandidateStates() {
-  const states = readCandidateStates();
   document.querySelectorAll("[data-candidate-id]").forEach((card) => {
-    const state = states[card.dataset.candidateId] || "";
+    const state = candidateStates[card.dataset.candidateId] || "";
     card.classList.toggle("is-verified", state === "verified");
     card.classList.toggle("is-deleted", state === "deleted");
     card.querySelectorAll("button").forEach((button) => {
@@ -69,6 +67,20 @@ function applyCandidateStates() {
       );
     });
   });
+}
+
+async function refreshCandidateStates() {
+  try {
+    const response = await fetch("/api/candidate-states", {
+      cache: "no-store",
+    });
+    if (!response.ok) throw new Error("状态读取失败");
+    const payload = await response.json();
+    candidateStates = payload.states || {};
+    applyCandidateStates();
+  } catch {
+    // 保留当前显示状态，下一次轮询继续重试。
+  }
 }
 
 function renderLodgingCandidates(candidates) {
@@ -102,7 +114,8 @@ function renderLodgingCandidates(candidates) {
     const card = button.closest("[data-candidate-id]");
     updateCandidateState(card.dataset.candidateId, button.dataset.action);
   });
-  applyCandidateStates();
+  refreshCandidateStates();
+  window.setInterval(refreshCandidateStates, 4000);
 }
 
 function renderReport(report) {
@@ -219,7 +232,7 @@ function renderReport(report) {
   }
 }
 
-fetch("./data/report.json?v=20260730-candidates")
+fetch("./data/report.json?v=20260730-sync")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Report data failed to load");
