@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-30",
+  "lastUpdated": "2026-07-31",
   "nextReview": "每天自动检查好价",
   "trip": {
     "title": "马略卡高尔夫月住计划",
@@ -57,11 +57,11 @@
         "url": "https://zh.airbnb.com/rooms/24932587?adults=2&check_in=2026-12-04&check_out=2027-01-06"
       },
       {
-        "title": "Sant Agusti / Cala Major 月租候选 - Idealista",
-        "distance": "Palma 西区，通常比老城更靠近 Son Vida / Son Quint，逐套控制在 20 公里内",
-        "price": "当前搜索结果约 16,600 SEK/月；33 晚按比例约 18,200 SEK，低于 20,000 SEK（清洁费/中介费可能使其超预算）",
-        "why": "比 Porto Pi 日租公寓便宜很多，同时保留厨房、洗衣、停车可能性；优先筛选 furnished + temporary rental + washing machine。",
-        "url": "https://www.idealista.com/en/alquiler-viviendas/palma-de-mallorca-balears-illes/con-pisos%2Calquiler-temporal/?ordenado-por=precios-asc"
+        "title": "Idealista 待复核：Can Pastilla 2 房 + 可选车库",
+        "distance": "Can Pastilla；避开 Palma 市中心，但到 Arabella 三座球场可能接近 20 公里边界，需地图逐点复核",
+        "price": "1,500 EUR/月≈16,575 SEK；可选车库 100 EUR/月≈1,105 SEK；30 晚约 17,680 SEK，未含押金/水电/中介可能费用",
+        "why": "当前可见价格低于 20,000 SEK，停车条件比多数市区公寓更清楚；限制是房东要求长期租赁资料/工作合同，且 2026-12 可租性未确认。",
+        "url": "https://www.idealista.com/alquiler-viviendas/palma-de-mallorca/playa-de-palma/can-pastilla/con-amueblado_amueblados/"
       }
     ]
   },
@@ -75,13 +75,14 @@
     "searchUrl": "https://zh.airbnb.com/s/Porto-Pi--Palma--Spain/homes?checkin=2026-12-04&checkout=2027-01-06&adults=2&query=Porto%20Pi%2C%20Palma%2C%20Spain&amenities%5B%5D=33&amenities%5B%5D=8&amenities%5B%5D=9&amenities%5B%5D=30"
   },
   "dailyDiff": {
-    "previousDate": "2026-07-25",
-    "currentDate": "2026-07-30",
-    "note": "本次与最近一次有效结果比较。",
+    "previousDate": "2026-07-30",
+    "currentDate": "2026-07-31",
+    "note": "本次实际覆盖：Airbnb 月租页、Idealista Mallorca 临租/Can Pastilla、Booking.com Palma 公寓、Vrbo Palma、Expedia apartments。未把无法确认目标日期总价的平台结果当成实价。",
     "items": [
-      "住宿搜索重点转向 Airbnb，并加入洗衣机、厨房、免费停车和暖气筛选。",
-      "新增 Airbnb 推荐弹窗，当前首选为 Estudio Robert 1º，页面价格约 19,393 SEK/月。",
-      "候选住宿可标记为已核实或删除。"
+      "新增 Idealista Can Pastilla 2 房候选：1,500 EUR/月≈16,575 SEK，车库另 100 EUR/月≈1,105 SEK；30 晚约 17,680 SEK，低于 20,000 SEK，但需确认 2026-12 可租、押金/水电和到三座 Arabella 球场均约 20 公里内。",
+      "新增 Idealista Bellamar 18 studio 待复核：1,300 EUR/月≈14,365 SEK；价格有优势，但页面摘要未确认洗衣机、停车和目标日期可租性。",
+      "Booking.com/Vrbo/Expedia 找到带厨房、洗衣或停车信号的 Palma 公寓页，但未显示 2026-12-04 至 2027-01-06 的可核实总价，因此只作为来源跟踪，不升级为推荐。",
+      "Airbnb Estudio Robert 1º 保持为当前首选，未发现可验证的新降价；仍需复核 33 晚最终含费总价和准确距离。"
     ]
   },
   "lodgingCandidates": [
@@ -102,6 +103,24 @@
       "price": "约 18,200 SEK / 33 晚估算",
       "note": "预算内参考；需逐套复核停车、短租合同、清洁费及准确位置。",
       "url": "https://www.idealista.com/en/alquiler-viviendas/palma-de-mallorca-balears-illes/con-pisos%2Calquiler-temporal/?ordenado-por=precios-asc"
+    },
+    {
+      "id": "idealista-can-pastilla-2br-garage-20260731",
+      "addedDate": "2026-07-31",
+      "source": "Idealista",
+      "title": "Can Pastilla 2 房 furnished apartment + optional garage",
+      "price": "1,500 EUR/月≈16,575 SEK；车库另 100 EUR/月≈1,105 SEK",
+      "note": "80 m²、2 房、电梯、半新楼；页面摘要显示车库可选。优点是低于 20,000 SEK 且避开市中心；风险是要求长期租赁资料/工作合同，需确认 2026-12 至 2027-01 可租、洗衣机、押金/水电和到三座 Arabella 球场均约 20 公里内。",
+      "url": "https://www.idealista.com/alquiler-viviendas/palma-de-mallorca/playa-de-palma/can-pastilla/con-amueblado_amueblados/"
+    },
+    {
+      "id": "idealista-bellamar-18-studio-20260731",
+      "addedDate": "2026-07-31",
+      "source": "Idealista",
+      "title": "Can Pastilla / Bellamar 18 studio",
+      "price": "1,300 EUR/月≈14,365 SEK",
+      "note": "32 m² studio、无中介费、近海边/机场；价格明显低于预算，但页面摘要未确认厨房、洗衣机、停车和 2026-12 目标日期，因此仅列为待复核候选。",
+      "url": "https://www.idealista.com/alquiler-viviendas/palma-de-mallorca/playa-de-palma/can-pastilla/con-amueblado_amueblados/"
     }
   ],
   "alerts": [
@@ -240,9 +259,18 @@
     { "label": "Polar Mallorca 002 Porto Pi", "url": "https://polarmallorca.com/en/rentals/apartment-palma-002-apartamento-en-zona-porto-pi-489356.html" },
     { "label": "XE EUR-SEK exchange rate", "url": "https://www.xe.com/en-us/currencyconverter/convert/?Amount=1&From=EUR&To=SEK" },
     { "label": "Investing.com USD-SEK exchange rate", "url": "https://in.investing.com/currencies/usd-sek" },
-    { "label": "Idealista Palma seasonal rentals", "url": "https://www.idealista.com/en/alquiler-viviendas/palma-de-mallorca-balears-illes/con-pisos%2Calquiler-temporal/?ordenado-por=precios-asc" }
+    { "label": "Idealista Palma seasonal rentals", "url": "https://www.idealista.com/en/alquiler-viviendas/palma-de-mallorca-balears-illes/con-pisos%2Calquiler-temporal/?ordenado-por=precios-asc" },
+    { "label": "Idealista Can Pastilla furnished rentals", "url": "https://www.idealista.com/alquiler-viviendas/palma-de-mallorca/playa-de-palma/can-pastilla/con-amueblado_amueblados/" },
+    { "label": "Airbnb Palma monthly stays", "url": "https://www.airbnb.com/palma-spain/stays/monthly" },
+    { "label": "Vrbo Palma vacation rentals", "url": "https://www.vrbo.com/en-ca/vacation-rentals/spain/balearic-islands/palma-de-mallorca" },
+    { "label": "Expedia Palma apartments", "url": "https://www.expedia.es/en/Palma-De-Mallorca-Apartments.d2829-aaApartments.Travel-Guide-Accommodation" },
+    { "label": "Booking Apartamentos Hostalets", "url": "https://www.booking.com/hotel/es/apartamentos-hostalets-palma.en-gb.html" }
   ],
   "history": [
+    {
+      "date": "2026-07-31",
+      "summary": "住宿监控新增 Idealista Can Pastilla 两个待复核候选；Booking/Vrbo/Expedia/Airbnb 未发现可验证且更优的目标日期总价。"
+    },
     {
       "date": "2026-07-30",
       "summary": "住宿搜索重点转向 Airbnb；按洗衣机、厨房、免费停车和暖气筛选，并新增自动弹出的 Airbnb 推荐窗口。"
