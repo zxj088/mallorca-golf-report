@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <>
       <div dangerouslySetInnerHTML={{ __html: bodyContent }} />
-      <Script src="/app.js?v=20260730-sync" strategy="afterInteractive" />
+      <Script src="/app.js?v=20260731-lodging" strategy="afterInteractive" />
     </>
   );
 }
