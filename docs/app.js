@@ -232,7 +232,7 @@ function renderReport(report) {
   }
 }
 
-fetch("./data/report.json?v=20260801-lodging")
+fetch("./data/report.json?v=20260803-lodging")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Report data failed to load");
